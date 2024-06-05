@@ -15,8 +15,8 @@ from selenium.common.exceptions import JavascriptException
 from openpyxl.styles import Font
 import os
 from openpyxl import Workbook
+import math
 
-from fake_useragent import UserAgent
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -215,8 +215,15 @@ try:
 
         while index < num_buttons:
             # Find the buttons again after each navigation back
-            buttons = driver.find_elements(By.XPATH, "//div[contains(@class, 'ui button') and contains(@class, 'rounded') and contains(@class, 'black') and @style='background-color: #525252;']")
-            button_div = buttons[index]
+            try:
+                buttons = driver.find_elements(By.XPATH, "//div[contains(@class, 'ui button') and contains(@class, 'rounded') and contains(@class, 'black') and @style='background-color: #525252;']")
+                button_div = buttons[index]
+            except:
+                driver.back()
+                time.sleep(5)
+                buttons = driver.find_elements(By.XPATH, "//div[contains(@class, 'ui button') and contains(@class, 'rounded') and contains(@class, 'black') and @style='background-color: #525252;']")
+                button_div = buttons[index]
+
 
             print(f"Clicking button {index}/{num_buttons}")
 
@@ -316,10 +323,10 @@ try:
             # Write the data to the next empty row
             for col_num, value in enumerate(data, 1):
                 cell = sheet.cell(row=next_row, column=col_num, value=value)
-                if value in [linkedin_profile_url, em_text, internet_site_name]:
-                    cell.hyperlink = value
-                    cell.style = "Hyperlink"
-                    cell.font = Font(color="0000FF", underline="single")
+                # if value in [linkedin_profile_url, em_text, internet_site_name]:
+                #     cell.hyperlink = value
+                #     cell.style = "Hyperlink"
+                #     cell.font = Font(color="0000FF", underline="single")
 
             workbook.save(file_path)
 
