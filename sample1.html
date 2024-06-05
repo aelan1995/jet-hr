@@ -1,0 +1,1678 @@
+<html><head>
+    <script type="text/javascript">
+    (function(){
+    try {
+    function getterHook(obj, name, cb) {
+        if (document.__defineGetter__) {
+            document.__defineGetter__(name, cb);
+            return;
+        }
+        if ((obj && obj.prototype && Object) &&
+            (Object.getOwnPropertyDescriptor) &&
+            (Object.getOwnPropertyDescriptor(obj.prototype, name)) &&
+            (Object.getOwnPropertyDescriptor(obj.prototype, name).get) &&
+            (Object.getOwnPropertyDescriptor(obj.prototype, name).configurable)) {
+            Object.defineProperty(obj.prototype, name, { get : cb });
+            return;
+        }
+    }
+    function asmReferrerGetter() { return ""; }
+    getterHook(Document, "referrer", asmReferrerGetter);
+    } catch(e) {}
+    })();
+
+    </script>
+
+    <script type="text/javascript">
+    (function(){
+    window.ziit=!!window.ziit;try{(function(){(function(){var a=-1;a={A:++a,cc:"false"[a],a:++a,Ha:"false"[a],K:++a,$e:"[object Object]"[a],cb:(a[a]+"")[a],Ja:++a,bb:"true"[a],D:++a,M:++a,dc:"[object Object]"[a],o:++a,U:++a,sj:++a,rj:++a};try{a.Ga=(a.Ga=a+"")[a.M]+(a.wa=a.Ga[a.a])+(a.bc=(a.va+"")[a.a])+(!a+"")[a.Ja]+(a.xa=a.Ga[a.o])+(a.va="true"[a.a])+(a.fb="true"[a.K])+a.Ga[a.M]+a.xa+a.wa+a.va,a.bc=a.va+"true"[a.Ja]+a.xa+a.fb+a.va+a.bc,a.va=a.A[a.Ga][a.Ga],a.va(a.va(a.bc+'"\\'+a.a+a.M+a.a+a.cc+"\\"+a.D+a.A+"("+a.xa+"\\"+a.a+a.U+a.a+"\\"+a.a+
+    a.o+a.A+a.bb+a.wa+a.cc+"\\"+a.D+a.A+"\\"+a.a+a.o+a.U+"\\"+a.a+a.M+a.a+"\\"+a.a+a.M+a.o+a.cb+a.wa+"\\"+a.a+a.o+a.U+"['\\"+a.a+a.o+a.A+a.Ha+"\\"+a.a+a.U+a.a+"false"[a.K]+a.wa+a.Ha+a.cb+"']\\"+a.D+a.A+"===\\"+a.D+a.A+"'\\"+a.a+a.o+a.Ja+a.xa+"\\"+a.a+a.o+a.K+"\\"+a.a+a.M+a.a+"\\"+a.a+a.M+a.o+"\\"+a.a+a.D+a.U+"')\\"+a.D+a.A+"{\\"+a.a+a.K+"\\"+a.a+a.a+"\\"+a.a+a.o+a.o+a.Ha+"\\"+a.a+a.o+a.K+"\\"+a.D+a.A+a.bb+a.cb+"\\"+a.a+a.o+a.o+a.dc+"\\"+a.a+a.U+a.a+a.fb+"\\"+a.a+a.M+a.K+"\\"+a.a+a.M+a.Ja+"\\"+a.a+a.o+
+    a.A+"\\"+a.D+a.A+"=\\"+a.D+a.A+"\\"+a.a+a.o+a.U+"\\"+a.a+a.M+a.a+"\\"+a.a+a.M+a.o+a.cb+a.wa+"\\"+a.a+a.o+a.U+"['\\"+a.a+a.o+a.A+a.Ha+"\\"+a.a+a.U+a.a+"false"[a.K]+a.wa+a.Ha+a.cb+"'].\\"+a.a+a.o+a.K+a.bb+"\\"+a.a+a.o+a.A+"false"[a.K]+a.Ha+a.dc+a.bb+"(/.{"+a.a+","+a.D+"}/\\"+a.a+a.D+a.U+",\\"+a.D+a.A+a.cc+a.fb+"\\"+a.a+a.M+a.o+a.dc+a.xa+"\\"+a.a+a.M+a.a+a.wa+"\\"+a.a+a.M+a.o+"\\"+a.D+a.A+"(\\"+a.a+a.U+a.A+")\\"+a.D+a.A+"{\\"+a.a+a.K+"\\"+a.a+a.a+"\\"+a.a+a.a+"\\"+a.a+a.a+"\\"+a.a+a.o+a.K+a.bb+a.xa+
+    a.fb+"\\"+a.a+a.o+a.K+"\\"+a.a+a.M+a.o+"\\"+a.D+a.A+"(\\"+a.a+a.U+a.A+"\\"+a.D+a.A+"+\\"+a.D+a.A+"\\"+a.a+a.U+a.A+").\\"+a.a+a.o+a.Ja+a.fb+a.$e+"\\"+a.a+a.o+a.Ja+a.xa+"\\"+a.a+a.o+a.K+"("+a.K+",\\"+a.D+a.A+a.D+")\\"+a.a+a.K+"\\"+a.a+a.a+"\\"+a.a+a.a+"});\\"+a.a+a.K+"}\\"+a.a+a.K+'"')())()}catch(d){a%=5}})();var b=96;try{var da,pa,ra=c(383)?1:0,sa=c(556)?1:0;for(var ua=(c(184),0);ua<pa;++ua)ra+=(c(864),2),sa+=c(921)?2:3;da=ra+sa;window.eb===da&&(window.eb=++da)}catch(a){window.eb=da}var e=!0;
+    function f(a){var d=arguments.length,g=[];for(var h=1;h<d;h++)g[h-1]=arguments[h]-a;return String.fromCharCode.apply(String,g)}function wa(a){var d=91;a&&(document[f(d,209,196,206,196,189,196,199,196,207,212,174,207,188,207,192)]&&document[f(d,209,196,206,196,189,196,199,196,207,212,174,207,188,207,192)]!==q(d,209,196,206,196,189,199,192)||(e=!1));return e}function q(a){var d=arguments.length,g=[];for(var h=1;h<d;++h)g.push(arguments[h]-a);return String.fromCharCode.apply(String,g)}
+    function t(a,d){a+=d;return a.toString(36)}function ya(){}wa(window[ya[t(1086758,b)]]===ya);wa(typeof ie9rgb4!==t(1242178186103,b));wa(RegExp("\x3c")[f(b,212,197,211,212)](function(){return"\x3c"})&!RegExp(t(42793,b))[t(1372109,b)](function(){return"'x3'+'d';"}));
+    var za=window[q(b,193,212,212,193,195,200,165,214,197,206,212)]||RegExp(q(b,205,207,194,201,220,193,206,196,210,207,201,196),f(b,201))[t(1372109,b)](window["\x6e\x61vi\x67a\x74\x6f\x72"]["\x75\x73e\x72A\x67\x65\x6et"]),Da=+new Date+(c(731)?6E5:749787),Ea,Fa,Ga,Ia=window[f(b,211,197,212,180,201,205,197,207,213,212)],Ja=za?c(769)?3E4:42715:c(901)?5541:6E3;
+    document[f(b,193,196,196,165,214,197,206,212,172,201,211,212,197,206,197,210)]&&document[f(b,193,196,196,165,214,197,206,212,172,201,211,212,197,206,197,210)](f(b,214,201,211,201,194,201,204,201,212,217,195,200,193,206,199,197),function(a){var d=92;document[q(d,210,197,207,197,190,197,200,197,208,213,175,208,189,208,193)]&&(document[q(d,210,197,207,197,190,197,200,197,208,213,175,208,189,208,193)]===t(1058781891,d)&&a[q(d,197,207,176,206,209,207,208,193,192)]?Ga=!0:document[f(d,210,197,207,197,190,
+    197,200,197,208,213,175,208,189,208,193)]===t(68616527574,d)&&(Ea=+new Date,Ga=!1,A()))});function A(){if(!document[q(41,154,158,142,155,162,124,142,149,142,140,157,152,155)])return!0;var a=+new Date;if(a>Da&&(c(645)?6E5:846755)>a-Ea)return wa(!1);var d=wa(Fa&&!Ga&&Ea+Ja<a);Ea=a;Fa||(Fa=!0,Ia(function(){Fa=!1},c(690)?1:0));return d}A();var Ka=[c(358)?17795081:15484876,c(638)?27611931586:2147483647,c(379)?1558153217:1092527940];
+    function La(a){var d=22;a=typeof a===f(d,137,138,136,127,132,125)?a:a[f(d,138,133,105,138,136,127,132,125)](c(521)?36:18);var g=window[a];if(!g||!g[f(d,138,133,105,138,136,127,132,125)])return;var h=""+g;window[a]=function(k,l){Fa=!1;return g(k,l)};window[a][q(d,138,133,105,138,136,127,132,125)]=function(){return h}}for(var Na=(c(231),0);Na<Ka[t(1294399109,b)];++Na)La(Ka[Na]);wa(!1!==window[q(b,218,201,201,212)]);window.Ra=window.Ra||{};window.Ra.mc="08cb9df3b7194000174e9ca8617fd5f46ff74543f8f00208fb6d9bee96c5737274a6908bc0ced664a360f01ed645e8a3b25f27c001392ca9117e0680d2616de72cfaae209dc99ef1";
+    function B(a){var d=+new Date;if(!document[q(4,117,121,105,118,125,87,105,112,105,103,120,115,118,69,112,112)]||d>Da&&(c(188)?6E5:564680)>d-Ea)var g=wa(!1);else g=wa(Fa&&!Ga&&Ea+Ja<d),Ea=d,Fa||(Fa=!0,Ia(function(){Fa=!1},c(826)?1:0));return!(arguments[a]^g)}function c(a){return 862>a}(function(a){a||setTimeout(function(){var d=setTimeout(function(){},250);for(var g=0;g<=d;++g)clearTimeout(g)},500)})(!0);})();}catch(x){}finally{ie9rgb4=void(0);};function ie9rgb4(a,b){return a>>b>>0};
+
+    })();
+
+    </script>
+
+    <script type="text/javascript" src="/TSPD/08553781f9ab2000d8f8a7a08f14f6f81687f879a4ef98527b79c495c0326bf90a5edafbdb2c1bb1?type=9"></script>
+
+    <script type="text/javascript">
+    (function(){
+    window.ziit=!!window.ziit;try{(function(){(function(a){var d=this[l("tnemucod")],g=[];try{a={" == f":!a};var h=d.getElementsByTagName("*");for(var k in h)if(a[" == f"])try{h[k].setAttribute("data-safe","true")}catch(m){g.push(m.message)}}catch(m){g.push(m.message)}return g;function l(m){var n="";for(var p in m)n=m[p]+n;return n}})(!0);var b=96;
+    try{var da,pa,ra=c(362)?1:0,sa=c(472)?1:0,Oa=c(492)?1:0,Qa=c(879)?0:1,Sa=c(951)?0:1,Wa=c(485)?1:0,Ya=c(453)?1:0,Za=c(324)?1:0;for(var ua=(c(180),0);ua<pa;++ua)ra+=(c(503),2),sa+=(c(988),2),Oa+=(c(937),2),Qa+=c(800)?2:1,Sa+=(c(560),2),Wa+=c(276)?2:1,Ya+=c(990)?1:2,Za+=c(318)?3:2;da=ra+sa+Oa+Qa+Sa+Wa+Ya+Za;window.eb===da&&(window.eb=++da)}catch(a){window.eb=da}var e=!0;function t(a,d){a+=d;return a.toString(36)}
+    function wa(a){var d=67;a&&(document[q(d,185,172,182,172,165,172,175,172,183,188,150,183,164,183,168)]&&document[q(d,185,172,182,172,165,172,175,172,183,188,150,183,164,183,168)]!==t(68616527599,d)||(e=!1));return e}function ya(){}wa(window[ya[t(1086758,b)]]===ya);wa(typeof ie9rgb4!==t(1242178186103,b));wa(RegExp("\x3c")[t(1372109,b)](function(){return"\x3c"})&!RegExp(t(42793,b))[t(1372109,b)](function(){return"'x3'+'d';"}));
+    var za=window[q(b,193,212,212,193,195,200,165,214,197,206,212)]||RegExp(q(b,205,207,194,201,220,193,206,196,210,207,201,196),q(b,201))[t(1372109,b)](window["\x6e\x61vi\x67a\x74\x6f\x72"]["\x75\x73e\x72A\x67\x65\x6et"]),Da=+new Date+(c(66)?6E5:413572),Ea,Fa,Ga,Ia=window[q(b,211,197,212,180,201,205,197,207,213,212)],Ja=za?c(143)?3E4:35350:c(291)?6E3:4568;
+    document[q(b,193,196,196,165,214,197,206,212,172,201,211,212,197,206,197,210)]&&document[q(b,193,196,196,165,214,197,206,212,172,201,211,212,197,206,197,210)](f(b,214,201,211,201,194,201,204,201,212,217,195,200,193,206,199,197),function(a){var d=75;document[q(d,193,180,190,180,173,180,183,180,191,196,158,191,172,191,176)]&&(document[q(d,193,180,190,180,173,180,183,180,191,196,158,191,172,191,176)]===t(1058781908,d)&&a[f(d,180,190,159,189,192,190,191,176,175)]?Ga=!0:document[f(d,193,180,190,180,173,
+    180,183,180,191,196,158,191,172,191,176)]===t(68616527591,d)&&(Ea=+new Date,Ga=!1,A()))});function q(a){var d=arguments.length,g=[];for(var h=1;h<d;++h)g.push(arguments[h]-a);return String.fromCharCode.apply(String,g)}function A(){if(!document[f(4,117,121,105,118,125,87,105,112,105,103,120,115,118)])return!0;var a=+new Date;if(a>Da&&(c(716)?6E5:560027)>a-Ea)return wa(!1);var d=wa(Fa&&!Ga&&Ea+Ja<a);Ea=a;Fa||(Fa=!0,Ia(function(){Fa=!1},c(496)?1:0));return d}A();
+    var Ka=[c(248)?17795081:24094828,c(984)?2147483647:27611931586,c(692)?1558153217:1135558364];function La(a){var d=88;a=typeof a===f(d,203,204,202,193,198,191)?a:a[q(d,204,199,171,204,202,193,198,191)](c(720)?36:27);var g=window[a];if(!g||!g[f(d,204,199,171,204,202,193,198,191)])return;var h=""+g;window[a]=function(k,l){Fa=!1;return g(k,l)};window[a][f(d,204,199,171,204,202,193,198,191)]=function(){return h}}for(var Na=(c(330),0);Na<Ka[t(1294399109,b)];++Na)La(Ka[Na]);wa(!1!==window[t(1656869,b)]);
+    window.Ra=window.Ra||{};window.Ra.uj="08d1f842a116e800e564ea574e56750d6ff74543f8f0020882e7d0077aebeef7496fad2824b5dc2ec3a0a88455a75038432922d122a33f6424a06ddc3c42eee19100f14f5b5eab65f57c76c9933979db05130316f202485780dc1e5bb0ed852dc06edf2c630afb5b13b44cbff2ee231d928bed404048d980ee9894b49c9c621f38bc5f1f11b7bf914f74019f80e56b8f801b6baf9d50990cb8455216db1e3b2443002c28a705f783fd954ea4d19491677a8e60a8cd844455e266d2f30cd3861662a35c07a02b9dabf673611b7fa54f50d9e2876af3a08d662a8563880244ceada606cb56b32f2f9c9fb81758cf0da6af";function f(a){var d=arguments.length,g=[];for(var h=1;h<d;h++)g[h-1]=arguments[h]-a;return String.fromCharCode.apply(String,g)}function B(a){var d=+new Date;if(!document[f(41,154,158,142,155,162,124,142,149,142,140,157,152,155,106,149,149)]||d>Da&&(c(75)?6E5:588624)>d-Ea)var g=wa(!1);else g=wa(Fa&&!Ga&&Ea+Ja<d),Ea=d,Fa||(Fa=!0,Ia(function(){Fa=!1},c(43)?1:0));return!(arguments[a]^g)}function c(a){return 862>a}
+    (function(){var a=/(A([0-9a-f]{1,4}:){1,6}(:[0-9a-f]{1,4}){1,1}Z)|(A(([0-9a-f]{1,4}:){1,7}|:):Z)|(A:(:[0-9a-f]{1,4}){1,7}Z)/ig,d=document.getElementsByTagName("head")[0],g=[];for(d&&(d=d.innerHTML.slice(0,1E3));d=null!==a.exec("");)g.push(d)})();})();}catch(x){}finally{ie9rgb4=void(0);};function ie9rgb4(a,b){return a>>b>>0};
+
+    })();
+
+    </script>
+
+    <script type="text/javascript" src="/TSPD/08553781f9ab2000d8f8a7a08f14f6f81687f879a4ef98527b79c495c0326bf90a5edafbdb2c1bb1?type=17"></script>
+    <script type="text/javascript" src="./wicket/resource/org.apache.wicket.resource.JQueryResourceReference/jquery/jquery-3.6.0-ver-7B432A70897DCD6A8F6D26413CDF1916.js"></script>
+    <script type="text/javascript" src="./wicket/resource/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/res/js/wicket-ajax-jquery-ver-04D5389C5F00ED98AD39E57EBB5AA818.js"></script>
+    <script type="text/javascript" id="wicket-ajax-base-url">
+    /*<![CDATA[*/
+    Wicket.Ajax.baseUrl="dettaglioStartup?0&amp;id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D";
+    /*]]>*/
+    </script>
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="jssocials/jssocials.css">
+    <link rel="stylesheet" type="text/css" href="jssocials/jssocials-theme-flat.css">
+    <script type="text/javascript" src="jssocials/jssocials.min.js"></script>
+    <script type="text/javascript" src="circliful/jquery.circliful.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="circliful/jquery.circliful.css">
+    <script type="text/javascript" src="jquery_scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery_scrollbar/jquery.mCustomScrollbar.min.css">
+
+    <meta name="viewport" content="width=600px, initial-scale=0.5">
+    <link href="semantic/semantic.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <meta name="description" content="startup and innovative SMEs, company profile for NINDO SOCIETA' A RESPONSABILITA' LIMITATA">
+    <meta name="keywords" content="startup and innovative SMEs, company profile for NINDO SOCIETA' A RESPONSABILITA' LIMITATA">
+    <title>startup and innovative SMEs, company profile for NINDO SOCIETA' A RESPONSABILITA' LIMITATA</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,500" rel="stylesheet">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=1">
+    <script type="text/javascript" src="semantic/semantic.min.js"></script>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, max-age=0, must-revalidate, no-store">
+    <meta http-equiv="Expires" content="0">
+    <meta name="og:title" content="startup and innovative SMEs, company profile for NINDO SOCIETA' A RESPONSABILITA' LIMITATA">
+    <meta name="og:image" content="https://startup.registroimprese.it/isin/logoImg?id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D&amp;impType=startup">
+    <script type="text/javascript" src="datetimepicker/jquery.datetimepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="datetimepicker/jquery.datetimepicker.css">
+    <script type="text/javascript">
+    /*<![CDATA[*/
+    Wicket.Event.add(window, "domready", function(event) {
+    Wicket.Ajax.ajax({"u":"./dettaglioStartup?0-1.0-stickyToolbar-linguaBtn&id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D","c":"id2","e":"click"});;
+    Wicket.Ajax.ajax({"u":"./dettaglioStartup?0-1.0-stickyToolbar-linguaBtnMobile&id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D","c":"id3","e":"click"});;
+    Wicket.Ajax.ajax({"u":"./dettaglioStartup?0-1.0-stickyToolbar-desktopContattiLnk&id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D","c":"id4","e":"click"});;
+    Wicket.Ajax.ajax({"u":"./dettaglioStartup?0-1.0-stickyToolbar-mobileContattiLnk&id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D","c":"id5","e":"click"});;
+    Wicket.Ajax.ajax({"u":"./dettaglioStartup?0-1.0-dettaglioStartupProfiloPanel-socialPopupBtn-icon&id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D","c":"id6","e":"click"});;
+    Wicket.Ajax.ajax({"u":"./dettaglioStartup?0-1.0-dettaglioStartupProfiloPanel-downloadPnl-downloadCsvLnk&id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D","c":"id7","e":"click"});;
+    Wicket.Ajax.ajax({"u":"./dettaglioStartup?0-1.0-dettaglioStartupProfiloPanel-downloadPnl-downloadXmlLnk&id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D","c":"id8","e":"click"});;
+    Wicket.Ajax.ajax({"u":"./dettaglioStartup?0-1.0-dettaglioStartupProfiloPanel-statoProfiloPnl-bottoneLnk&id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D","c":"id1","e":"click"});;
+    Wicket.Ajax.ajax({"u":"./dettaglioStartup?0-1.0-dettaglioStartupProfiloPanel-statoProfiloPnl-detailProfileRow-iconaStadio-icon&id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D","c":"id9","e":"click"});;
+    Wicket.Ajax.ajax({"u":"./dettaglioStartup?0-1.0-dettaglioStartupProfiloPanel-statoProfiloPnl-detailProfileRow-iconaPresentazione-icon&id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D","c":"ida","e":"click"});;
+    Wicket.Ajax.ajax({"u":"./dettaglioStartup?0-1.0-dettaglioStartupProfiloPanel-statoProfiloPnl-detailProfileRow-iconaProdotto-icon&id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D","c":"idb","e":"click"});;
+    Wicket.Ajax.ajax({"u":"./dettaglioStartup?0-1.0-dettaglioStartupProfiloPanel-statoProfiloPnl-detailProfileRow-iconaMercato-icon&id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D","c":"idc","e":"click"});;
+    Wicket.Ajax.ajax({"u":"./dettaglioStartup?0-1.0-dettaglioStartupProfiloPanel-statoProfiloPnl-detailProfileRow-iconaBusiness-icon&id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D","c":"idd","e":"click"});;
+    $('a[href*="$static_prefix$"]').each(function(){$(this).attr('href',$(this).attr('href').replace('$static_prefix$','static'));}); ;
+    Wicket.Event.publish(Wicket.Event.Topic.AJAX_HANDLERS_BOUND);
+    ;});
+    /*]]>*/
+    </script>
+    </head>
+    <body>
+        <script>var contextPath = "https://startup.registroimprese.it/isin/";</script>
+        <script>
+    /*<![CDATA[*/
+
+            function goBack(){
+                if (document.referrer!=null && document.referrer.indexOf(contextPath)==0){
+                    window.history.back();
+                }else{
+                    window.location.href=contextPath;
+                }
+            }
+
+    /*]]>*/
+    </script>
+        <script>var currLang='en';var currDateFormat='Y-m-d';</script>
+
+
+        <div class="ui very wide left sidebar inverted vertical menu" id="leftSidebar">
+            <a href="/isin/" id="mobileMenuHome" onclick="return sendGa(this);" class="item voceMenuBig">
+                <span>HOME</span>
+            </a>
+            <div class="ui inverted accordion toolbar homepage voceMenuBig">
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    INFORMATION ABOUT THE REGULATION
+                </div>
+                <div class="content">
+                    <a href="static/startup/index.html" id="mobileMenuScopriStartup" onclick="sendGa(this);" target="tab" class="item">Find out if your company is an innovative startup</a>
+                    <a href="static/pminnovative/index.html" id="mobileMenuScopriPmi" onclick="sendGa(this);" target="tab" class="item">Find out if your company is an innovative SME</a>
+                    <a href="static/confronto.html" id="mobileMenuConfronta" onclick="sendGa(this);" target="tab" class="item">Compare startups and innovative SMEs</a>
+                    <a href="https://www.mise.gov.it/index.php/it/impresa/registro-delle-imprese/startup" id="mobileMenuMise" onclick="sendGa(this);" target="tab" class="item">MISE - circulars and opinions</a>
+                </div>
+            </div>
+            <div class="ui inverted accordion toolbar homepage voceMenuBig">
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    ACCESS TO DATA
+                </div>
+                <div class="content">
+                    <a href="static/startup/dashboard.html" id="mobileDashboardStartup" onclick="sendGa(this);" target="tab" class="item">Navigable startup report (Dashboard)</a>
+                    <a href="static/startup/index.html?slideJump=32" id="mobileMenuElenchiStartup" onclick="sendGa(this);" target="tab" class="item">Startup lists and statistics</a>
+                    <a href="static/startup/index.html?slideJump=33" id="mobileMenuElenchiIncubatori" onclick="sendGa(this);" target="tab" class="item">Incubator lists and statistics</a>
+                    <a href="static/pminnovative/index.html?slideJump=31" id="mobileMenuElenchiPmi" onclick="sendGa(this);" target="tab" class="item">SMEs lists and statistics</a>
+                    <a href="static/startup/index.html?slideJump=34" id="mobileMenuWebservices" onclick="sendGa(this);" target="tab" class="item">Pitch, sectors and business model</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="pusher">
+            <div id="mainDiv">
+                <div class="ui fixed inverted menu" style="height:auto;">
+                    <div class="ui container mobile-only">
+                        <div class="homepage" onclick="$('#leftSidebar').sidebar('show');">
+                            <a class="launch icon item">
+                                <i class="content huge icon"></i>
+                            </a>
+                        </div>
+
+                        <div class="right menu">
+                            <a class="item" id="id5" href="javascript:;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 23 25" style="vertical-align: bottom;" id="yui_patched_v3_11_0_1_1491301892604_904">
+                                  <g fill="#fff" fill-rule="evenodd">
+                                    <path d="M1.91 10.57h.83c.227 0 .234-.15.242-.225C3.417 6.222 6.896 3 11.11 3h.78c4.183 0 7.64 3.175 8.118 7.253.012.105.018.316.21.316h.872c.573 0 1.91.6 1.91 3.66v1.604c0 2.27-1.337 2.793-1.91 2.793h-2.777c-.572 0-1.04-.47-1.04-1.047v-5.97c0-.575.468-1.046 1.04-1.046 0 0 .13-.013.098-.247-.45-3.222-3.19-5.72-6.52-5.72h-.78c-3.3 0-6.04 2.46-6.51 5.656-.01.103-.07.312.09.312.57 0 1.04.47 1.04 1.046v5.975c0 .576-.47 1.047-1.04 1.047h-.52c-.14 0-.12.118-.102.176.425 1.93 1.378 4.117 3.52 4.117H9.17c.16 0 .2-.12.23-.175.257-.473.755-.793 1.328-.793h1.46c.837 0 1.514.68 1.514 1.52 0 .842-.677 1.523-1.513 1.523h-1.46c-.58 0-1.09-.33-1.34-.81-.02-.043-.04-.13-.21-.13h-1.6c-1.458 0-3.4-.727-4.41-4.19-.11-.368-.2-.735-.27-1.09-.01-.048-.02-.145-.17-.145h-.82c-.576 0-1.91-.52-1.91-2.79v-1.61c0-3.016 1.333-3.665 1.91-3.665z"></path>
+                                    <path d="M13.637 8.82C12.047 7.955 11 6.49 11 4.826 11 2.16 13.686 0 17 0s6 2.16 6 4.825-2.686 4.825-6 4.825c-.357 0-.707-.025-1.047-.073-.734.71-2.562 2.476-2.562 2.422 0-.05.17-2.1.25-3.18z"></path>
+                                  </g>
+                                  </svg>
+                            </a>
+                            <a class="item" id="id3" href="javascript:;">
+                                <span class="ui basic huge label horizontalMarginAuto langToolbarLabel">ITA</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="ui container computer large small-desktop-only">
+                        <a href="/isin/" id="desktopMenuHome" onclick="return sendGa(this);" class="item fontBold">
+                            <span class="voceMenuPrincipale">HOME</span>
+                        </a>
+                        <div class="ui dropdown homepage item" tabindex="0">
+                            <span class="voceMenuPrincipale">INFORMATION ABOUT THE REGULATION</span>
+                            <div class="inverted menu" tabindex="-1">
+                              <a href="static/startup/index.html" id="desktopMenuScopriStartup" onclick="sendGa(this);" target="tab" class="item voceMenu"><i class="stop icon" id="voceMenuPointer"></i>Find out if your company is an innovative startup</a>
+                              <a href="static/pminnovative/index.html" id="desktopMenuScopriPmi" onclick="sendGa(this);" target="tab" class="item voceMenu"><i class="stop icon" id="voceMenuPointer"></i>Find out if your company is an innovative SME</a>
+                              <a href="static/confronto.html" id="desktopMenuConfronta" onclick="sendGa(this);" target="tab" class="item voceMenu"><i class="stop icon" id="voceMenuPointer"></i>Compare startups and innovative SMEs</a>
+                              <a href="https://www.mise.gov.it/index.php/it/impresa/registro-delle-imprese/startup" id="desktopMenuMise" onclick="sendGa(this);" target="tab" class="item voceMenu" style="padding-bottom:30px !important;"><i class="stop icon" id="voceMenuPointer"></i>MISE - circulars and opinions</a>
+                            </div>
+                          </div>
+                          <div class="ui dropdown homepage item" tabindex="0">
+                            <span class="voceMenuPrincipale">ACCESS TO DATA</span>
+                            <div class="inverted menu" tabindex="-1">
+                              <a href="static/startup/dashboard.html" id="desktopDashboardStartup" onclick="sendGa(this);" target="tab" class="item voceMenu"><i class="stop icon" id="voceMenuPointer"></i>Navigable startup report (Dashboard)</a>
+                              <a href="static/startup/index.html?slideJump=32" id="desktopMenuElenchiStartup" onclick="sendGa(this);" target="tab" class="item voceMenu"><i class="stop icon" id="voceMenuPointer"></i>Startup lists and statistics</a>
+                              <a href="static/startup/index.html?slideJump=33" id="desktopMenuElenchiIncubatori" onclick="sendGa(this);" target="tab" class="item voceMenu"><i class="stop icon" id="voceMenuPointer"></i>Incubator lists and statistics</a>
+                              <a href="static/pminnovative/index.html?slideJump=31" id="desktopMenuElenchiPmi" onclick="sendGa(this);" target="tab" class="item voceMenu"><i class="stop icon" id="voceMenuPointer"></i>SMEs lists and statistics</a>
+                              <a href="static/startup/index.html?slideJump=34" id="desktopMenuWebservices" onclick="sendGa(this);" target="tab" class="item voceMenu" style="padding-bottom:30px !important;"><i class="stop icon" id="voceMenuPointer"></i>Pitch, sectors and business model</a>
+                            </div>
+                          </div>
+
+                          <div class="item">
+
+                        </div>
+                        <div class="right menu" id="rightToolbarMenu">
+                            <a class="item" id="id4" href="javascript:;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 23 25" style="vertical-align: bottom;" id="yui_patched_v3_11_0_1_1491301892604_904">
+                                  <g fill="#fff" fill-rule="evenodd">
+                                    <path d="M1.91 10.57h.83c.227 0 .234-.15.242-.225C3.417 6.222 6.896 3 11.11 3h.78c4.183 0 7.64 3.175 8.118 7.253.012.105.018.316.21.316h.872c.573 0 1.91.6 1.91 3.66v1.604c0 2.27-1.337 2.793-1.91 2.793h-2.777c-.572 0-1.04-.47-1.04-1.047v-5.97c0-.575.468-1.046 1.04-1.046 0 0 .13-.013.098-.247-.45-3.222-3.19-5.72-6.52-5.72h-.78c-3.3 0-6.04 2.46-6.51 5.656-.01.103-.07.312.09.312.57 0 1.04.47 1.04 1.046v5.975c0 .576-.47 1.047-1.04 1.047h-.52c-.14 0-.12.118-.102.176.425 1.93 1.378 4.117 3.52 4.117H9.17c.16 0 .2-.12.23-.175.257-.473.755-.793 1.328-.793h1.46c.837 0 1.514.68 1.514 1.52 0 .842-.677 1.523-1.513 1.523h-1.46c-.58 0-1.09-.33-1.34-.81-.02-.043-.04-.13-.21-.13h-1.6c-1.458 0-3.4-.727-4.41-4.19-.11-.368-.2-.735-.27-1.09-.01-.048-.02-.145-.17-.145h-.82c-.576 0-1.91-.52-1.91-2.79v-1.61c0-3.016 1.333-3.665 1.91-3.665z"></path>
+                                    <path d="M13.637 8.82C12.047 7.955 11 6.49 11 4.826 11 2.16 13.686 0 17 0s6 2.16 6 4.825-2.686 4.825-6 4.825c-.357 0-.707-.025-1.047-.073-.734.71-2.562 2.476-2.562 2.422 0-.05.17-2.1.25-3.18z"></path>
+                                  </g>
+                                  </svg>
+                            </a>
+                            <a class="item" id="id2" href="javascript:;">
+                                <span class="ui basic large label horizontalMarginAuto langToolbarLabel">ITA</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="marginBottomMenu">
+
+        <div class="ui container grid" id="mainGrid" style="">
+            <div class="row">
+                <div id="content" class="column">
+
+        <div>
+
+        <div class="ui basic small modal" id="socialPopup">
+            <h3 class="ui header center aligned">Share</h3>
+            <div class="content">
+
+        <div class="ui basic segment">
+            <div id="share" style="text-align: center;" class="jssocials"><div class="jssocials-shares"><div class="jssocials-share jssocials-share-email"><a class="jssocials-share-link" href="mailto:?subject=The%20company%20NINDO%20SOCIETA%E2%80%99%20A%20RESPONSABILITA%E2%80%99%20LIMITATA%20compiled%20its%20profile%20at%20startup.registroimprese.it.%20Find%20out%20why%20it%E2%80%99s%20innovative!&amp;body=https%3A%2F%2Fstartup.registroimprese.it%2Fisin%2FdettaglioStartup%3Fid%3DKXU3bCJQBfS92AJOXqJVKg%252BWN%252BvvCSEnwawhUwfhow%253D%253D" target="_blank"><i class="fa fa-at jssocials-share-logo"></i></a><div class="jssocials-share-count-box jssocials-share-no-count"><span class="jssocials-share-count"></span></div></div><div class="jssocials-share jssocials-share-twitter"><a class="jssocials-share-link" href="https://twitter.com/share?url=https%3A%2F%2Fstartup.registroimprese.it%2Fisin%2FdettaglioStartup%3Fid%3DKXU3bCJQBfS92AJOXqJVKg%252BWN%252BvvCSEnwawhUwfhow%253D%253D&amp;text=The%20company%20NINDO%20SOCIETA%E2%80%99%20A%20RESPONSABILITA%E2%80%99%20LIMITATA%20compiled%20its%20profile%20at%20startup.registroimprese.it.%20Find%20out%20why%20it%E2%80%99s%20innovative!" target="_blank"><i class="fa fa-twitter jssocials-share-logo"></i></a><div class="jssocials-share-count-box jssocials-share-no-count"><span class="jssocials-share-count"></span></div></div><div class="jssocials-share jssocials-share-facebook"><a class="jssocials-share-link" href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstartup.registroimprese.it%2Fisin%2FdettaglioStartup%3Fid%3DKXU3bCJQBfS92AJOXqJVKg%252BWN%252BvvCSEnwawhUwfhow%253D%253D" target="_blank"><i class="fa fa-facebook jssocials-share-logo"></i></a><div class="jssocials-share-count-box jssocials-share-no-count"><span class="jssocials-share-count"></span></div></div><div class="jssocials-share jssocials-share-linkedin"><a class="jssocials-share-link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fstartup.registroimprese.it%2Fisin%2FdettaglioStartup%3Fid%3DKXU3bCJQBfS92AJOXqJVKg%252BWN%252BvvCSEnwawhUwfhow%253D%253D" target="_blank"><i class="fa fa-linkedin jssocials-share-logo"></i></a><div class="jssocials-share-count-box jssocials-share-no-count"><span class="jssocials-share-count"></span></div></div></div></div>
+            <script>var currUrl='https://startup.registroimprese.it/isin/dettaglioStartup?id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D';var shareText='The company NINDO SOCIETA’ A RESPONSABILITA’ LIMITATA compiled its profile at startup.registroimprese.it. Find out why it’s innovative!';</script>
+            <script>
+    /*<![CDATA[*/
+
+                $('#share').jsSocials({
+                    shares : [ "email", "twitter", "facebook", "linkedin" ],
+                    url : currUrl,
+                    showCount : true,
+                    text:shareText
+                });
+
+    /*]]>*/
+    </script>
+        </div>
+
+            </div>
+        </div>
+
+        <div class="ui rounded segment" style="border-bottom: none;font-color:#525252; margin-left: auto; margin-right: auto; padding: 0px; margin-top: 14px;">
+
+            <h2 class="ui header top attached inverted roundedtop" style="background-color: #525252;">
+                <i style="float:right;padding-top:0px;margin-right: 0px; cursor:pointer;" class="">
+        <i id="id6" class="ui icon alternate share " title="Share"></i>
+    </i>
+
+        <div class="ui dropdown" id="downloadPnl" style="float: right;" tabindex="0">
+            <i class="download icon"></i>
+            <div class="labeled icon inverted menu" tabindex="-1">
+                <a class="item" id="id7" href="javascript:;">
+                    <i class="file excel outline icon"></i>
+                    CSV
+                </a>
+                <a class="item" id="id8" href="javascript:;">
+                    <i class="file code outline icon"></i>
+                    XML
+                </a>
+            </div>
+            <script>
+    /*<![CDATA[*/
+
+                $('#downloadPnl').dropdown();
+
+    /*]]>*/
+    </script>
+        </div>
+
+                <span id="companyNameForGA"><span>NINDO SOCIETA' A RESPONSABILITA' LIMITATA</span></span>
+            </h2>
+
+            <div class="ui basic attached segment" style="text-align: left;border-bottom: none;">
+    <div id="ide">
+        <div class="ui stackable grid top"> <!-- wicket:id="anteprimaBtn" class="backgroundAnteprima" -->
+            <div class="nine wide column" style="margin-top: 20px;">
+
+                <div class="ui grid">
+                    <div class="two wide column">
+                        <img class="ui image" src="img/dati_registro-imprese.png">
+                    </div>
+                    <div class="twelve wide column">
+                        <h2 class="ui header">
+
+                            BUSINESS REGISTER INFORMATION
+                        </h2>
+                        Updated
+                        2024-06-03
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="ui grid no-vertical-column-padding">
+                    <div class="five wide column">
+                        Company name
+                    </div>
+                    <div class="eleven wide column">
+                        <b><span id="id10">NINDO SOCIETA' A RESPONSABILITA' LIMITATA</span></b>
+                    </div>
+                    <div class="five wide column" style="margin-top: 5px;">
+                        Location
+                    </div>
+                    <div class="eleven wide column" style="margin-top: 5px;">
+                        <span id="id11">L'AQUILA (AQ)</span>
+                    </div>
+                    <div class="five wide column" style="margin-top: 5px;">
+                        Fiscal code
+                    </div>
+                    <div class="eleven wide column" style="margin-top: 5px;">
+                        <span id="id12">02162510669</span>
+                    </div>
+                    <div class="five wide column" style="margin-top: 5px;">
+                        Legal form
+                    </div>
+                    <div class="eleven wide column" style="margin-top: 5px;">
+                        <span id="id13">LIMITED LIABILITY COMPANY (LLC)</span>
+                    </div>
+                    <div class="five wide column" style="margin-top: 5px;">
+                        Established company
+                    </div>
+                    <div class="eleven wide column" style="margin-top: 5px;">
+                        <span id="id14">WITH NOTARY ACT</span>
+                    </div>
+                    <div class="five wide column" style="margin-top: 5px;">
+                        Internet site
+                    </div>
+                    <div class="eleven wide column" style="margin-top: 5px;">
+                        <a href="#" style="color: black" target="_new" id="id15">Information not registered</a><span></span>
+                    </div>
+    <!-- 				<div class="five wide column" style="margin-top: 10px;"> -->
+    <!-- 					<wicket:message key="inizioAttivita">Inizio attivita'</wicket:message> -->
+    <!-- 				</div> -->
+    <!-- 				<div class="eleven wide column" style="margin-top: 10px;"> -->
+    <!-- 					<span wicket:id="dtInizioAttivitaLbl"></span> -->
+    <!-- 				</div> -->
+                    <div class="five wide column" style="margin-top: 5px;">
+                        NACE Code
+                    </div>
+                    <div class="eleven wide column" style="margin-top: 5px;">
+                        <b><span id="id16">6311</span></b> <img id="codiceatecoLbl" class="ui inline image" src="./img/freccina_dx_classe.png" data-position="right center" data-content="Data processing, hosting and related activities">
+                        <script>
+    /*<![CDATA[*/
+
+                            $('#codiceatecoLbl').popup({
+                                inline : true
+                            });
+
+    /*]]>*/
+    </script>
+                    </div>
+    <!-- 				<div class="five wide column" style="margin-top: 5px;"> -->
+    <!-- 					<wicket:message key="divisioneAtecoEtc">Divisione Ateco</wicket:message> -->
+    <!-- 				</div> -->
+    <!-- 				<div class="eleven wide column" style="margin-top: 5px;"> -->
+    <!-- 					<span wicket:id="descDivAtecoLbl"></span> -->
+    <!-- 				</div> -->
+    <!-- 				<div class="five wide column" style="margin-top: 5px;"> -->
+    <!-- 					<wicket:message key="sezioneAtecoEtc">Sezione Ateco</wicket:message> -->
+    <!-- 				</div> -->
+    <!-- 				<div class="eleven wide column" style="margin-top: 5px;"> -->
+    <!-- 					<span wicket:id="descSezAtecoLbl"></span> -->
+    <!-- 				</div> -->
+                    <div class="five wide column" style="margin-top: 5px;">
+                        Sector
+                    </div>
+                    <div class="eleven wide column" style="margin-top: 5px;">
+                        <span id="id17">SERVICES</span>
+                    </div>
+
+
+                    <div class="twelve wide column" style="margin-top: 20px;">
+                        <b>Activities and expenses on research and development</b>
+                    </div>
+                    <div id="mostraPartePresentazioneAttivitaRi" class="four wide column" style="display: none;margin-top: 20px;" align="right">
+                        <span id="id18"><b><a id="mostraPartePresentazioneAttivitaRiLnk" style="color: gray; cursor: pointer;">Show less&nbsp;&nbsp;<i class="fa fa-angle-up"></i></a></b></span>
+                    </div>
+                    <div id="mostraTuttoPresentazioneAttivitaRi" class="four wide column" align="right" style="margin-top: 20px;">
+                        <span id="id19"><b><a id="mostraTuttoPresentazioneAttivitaRiLnk" style="color: gray; cursor: pointer; display: none;">Show more&nbsp;&nbsp;<i class="fa fa-angle-down"></i></a></b></span>
+                    </div>
+                    <div class="sixteen wide column" style="margin-top: 5px;max-height: 60px;overflow-y: hidden;" id="mostPresentazioneAttivitaRi">
+                        <span id="id1a">COME DA DICHIARAZIONE ALLEGATA</span>
+                        <b><span style="float: right;" id="id1b"></span></b>
+                        <script>
+    /*<![CDATA[*/
+
+                            function mostraTuttoPresentazioneAttivitaRi() {
+                                document.getElementById('mostPresentazioneAttivitaRi').style.maxHeight="100%";
+                                $('#mostraPartePresentazioneAttivitaRi').show();
+                                $('#mostraTuttoPresentazioneAttivitaRi').hide();
+                            }
+                            function mostraPartePresentazioneAttivitaRi() {
+                                document.getElementById('mostPresentazioneAttivitaRi').style.maxHeight="60px";
+                                $('#mostraPartePresentazioneAttivitaRi').hide();
+                                $('#mostraTuttoPresentazioneAttivitaRi').show();
+                            }
+                            $('#mostraTuttoPresentazioneAttivitaRiLnk').click(function() {
+                                mostraTuttoPresentazioneAttivitaRi();
+                            });
+
+                            $('#mostraPartePresentazioneAttivitaRiLnk').click(function() {
+                                mostraPartePresentazioneAttivitaRi();
+                            });
+
+
+    /*]]>*/
+    </script>
+                    </div>
+
+
+                    <div class="twelve wide column" style="margin-top: 20px;">
+                        <b>Titles and professional experiences of  partners and working staff</b>
+                    </div>
+                    <div id="mostraParteTeamRi" class="four wide column" style="display: none;margin-top: 20px;" align="right">
+                        <span id="id1c"><b><a id="mostraParteTeamRiLnk" style="color: gray; cursor: pointer;">Show less&nbsp;&nbsp;<i class="fa fa-angle-up"></i></a></b></span>
+                    </div>
+                    <div id="mostraTuttoTeamRi" class="four wide column" align="right" style="margin-top: 20px; display: none;">
+                        <span id="id1d"><b><a id="mostraTuttoTeamRiLnk" style="color: gray; cursor: pointer;">Show more&nbsp;&nbsp;<i class="fa fa-angle-down"></i></a></b></span>
+                    </div>
+                    <div class="sixteen wide column" style="margin-top: 5px;max-height: 60px;overflow-y: hidden;" id="mostTeamRi">
+                        <span id="id1e">.</span>
+                        <b><span style="float: right;" id="id1f"></span></b>
+                        <script>
+    /*<![CDATA[*/
+
+                            function mostraTuttoTeamRi() {
+                                document.getElementById('mostTeamRi').style.maxHeight="100%";
+                                $('#mostraParteTeamRi').show();
+                                $('#mostraTuttoTeamRi').hide();
+                            }
+                            function mostraParteTeamRi() {
+                                document.getElementById('mostTeamRi').style.maxHeight="60px";
+                                $('#mostraParteTeamRi').hide();
+                                $('#mostraTuttoTeamRi').show();
+                            }
+                            $('#mostraTuttoTeamRiLnk').click(function() {
+                                mostraTuttoTeamRi();
+                            });
+
+                            $('#mostraParteTeamRiLnk').click(function() {
+                                mostraParteTeamRi();
+                            });
+
+    /*]]>*/
+    </script>
+                    </div>
+
+                    <div class="twelve wide column" style="margin-top: 20px;">
+                        <b>Professional relationships with incubators, investors and research universities</b>
+                    </div>
+                    <div id="mostraParteFinanzaIncubatoriRi" class="four wide column" style="display: none;margin-top: 20px;" align="right">
+                        <span id="id20"><b><a id="mostraParteFinanzaIncubatoriRiLnk" style="color: gray; cursor: pointer;">Show less&nbsp;&nbsp;<i class="fa fa-angle-up"></i></a></b></span>
+                    </div>
+                    <div id="mostraTuttoFinanzaIncubatoriRi" class="four wide column" align="right" style="margin-top: 20px; display: none;">
+                        <span id="id21"><b><a id="mostraTuttoFinanzaIncubatoriRiLnk" style="color: gray; cursor: pointer;">Show more&nbsp;&nbsp;<i class="fa fa-angle-down"></i></a></b></span>
+                    </div>
+                    <div class="sixteen wide column" style="margin-top: 5px;max-height: 60px;overflow-y: hidden;" id="mostFinanzaIncubatoriRi">
+                        <span id="id22">.</span>
+                        <b><span style="float: right;" id="id23"></span></b>
+
+                        <script>
+    /*<![CDATA[*/
+
+                            function mostraTuttoFinanzaIncubatoriRi() {
+                                document.getElementById('mostFinanzaIncubatoriRi').style.maxHeight="100%";
+                                $('#mostraParteFinanzaIncubatoriRi').show();
+                                $('#mostraTuttoFinanzaIncubatoriRi').hide();
+                            }
+                            function mostraParteFinanzaIncubatoriRi() {
+                                document.getElementById('mostFinanzaIncubatoriRi').style.maxHeight="60px";
+                                $('#mostraParteFinanzaIncubatoriRi').hide();
+                                $('#mostraTuttoFinanzaIncubatoriRi').show();
+                            }
+                            $('#mostraTuttoFinanzaIncubatoriRiLnk').click(function() {
+                                mostraTuttoFinanzaIncubatoriRi();
+                            });
+
+                            $('#mostraParteFinanzaIncubatoriRiLnk').click(function() {
+                                mostraParteFinanzaIncubatoriRi();
+                            });
+
+    /*]]>*/
+    </script>
+                    </div>
+
+                    <div class="twelve wide column" style="margin-top: 20px;">
+                        <b>List of privative rights on industrial, intellectual property</b>
+                    </div>
+                    <div id="mostraParteInnovazioneRi" class="four wide column" style="display: none;margin-top: 20px;" align="right">
+                        <span id="id24"><b><a id="mostraParteInnovazioneRiLnk" style="color: gray; cursor: pointer;">Show less&nbsp;&nbsp;<i class="fa fa-angle-up"></i></a></b></span>
+                    </div>
+                    <div id="mostraTuttoInnovazioneRi" class="four wide column" align="right" style="margin-top: 20px; display: none;">
+                        <span id="id25"><b><a id="mostraTuttoInnovazioneRiLnk" style="color: gray; cursor: pointer;">Show more&nbsp;&nbsp;<i class="fa fa-angle-down"></i></a></b></span>
+                    </div>
+                    <div class="sixteen wide column" style="margin-top: 5px;max-height: 60px;overflow-y: hidden;" id="mostInnovazioneRi">
+                        <span id="id26">.</span>
+                        <b><span style="float: right;" id="id27"></span></b>
+
+                        <script>
+    /*<![CDATA[*/
+
+                            function mostraTuttoInnovazioneRi() {
+                                document.getElementById('mostInnovazioneRi').style.maxHeight="100%";
+                                $('#mostraParteInnovazioneRi').show();
+                                $('#mostraTuttoInnovazioneRi').hide();
+                            }
+                            function mostraParteInnovazioneRi() {
+                                document.getElementById('mostInnovazioneRi').style.maxHeight="60px";
+                                $('#mostraParteInnovazioneRi').hide();
+                                $('#mostraTuttoInnovazioneRi').show();
+                            }
+                            $('#mostraTuttoInnovazioneRiLnk').click(function() {
+                                mostraTuttoInnovazioneRi();
+                            });
+
+                            $('#mostraParteInnovazioneRiLnk').click(function() {
+                                mostraParteInnovazioneRi();
+                            });
+
+    /*]]>*/
+    </script>
+                    </div>
+
+        <h4 class="header" style="margin-bottom: 0px;">Requirements for technological innovation</h4>
+        <div class="ui grid">
+            <div class="sixteen wide column">
+                <div class="ui celled three column grid" style="margin-bottom: 0px;">
+                    <div class="row">
+                        <div class="center aligned column" style="padding-bottom: 0px;">
+
+                                <div><b><span style="font-size: 2.6em">1</span></b></div>
+                                <div style="padding-top: 10px; padding-bottom: 10px;">R&amp;S</div>
+                                <img src="./dettaglioStartup?0--dettaglioStartupProfiloPanel-datiGenericiPnl-containerDatiGenerici-startupRequisitiInnovazionePnl-imgRicercaSviluppo&amp;id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D&amp;antiCache=1717400263020">
+
+                        </div>
+                        <div class="center aligned column" style="padding-bottom: 0px;">
+
+                                <div><b><span style="font-size: 2.6em">2</span></b></div>
+                                <div style="padding-top: 10px; padding-bottom: 10px;">Qualified Team</div>
+                                <img src="./dettaglioStartup?0--dettaglioStartupProfiloPanel-datiGenericiPnl-containerDatiGenerici-startupRequisitiInnovazionePnl-imgLaureatiMagistrali&amp;id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D&amp;antiCache=1717400263020">
+
+                        </div>
+                        <div class="center aligned column" style="padding-bottom: 0px;">
+
+                                <div><b><span style="font-size: 2.6em">3</span></b></div>
+                                <div style="padding-top: 10px; padding-bottom: 10px;">IP</div>
+                                <img src="./dettaglioStartup?0--dettaglioStartupProfiloPanel-datiGenericiPnl-containerDatiGenerici-startupRequisitiInnovazionePnl-imgBrevetti&amp;id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D&amp;antiCache=1717400263020">
+
+                        </div>
+                    </div>
+                    <div class="row" style="box-shadow: none;">
+                        <div class="center aligned column" style="padding-top: 0px; padding-bottom: 0px; position: relative; bottom: -6px;box-shadow: none;">
+                            <img id="ricercaSviluppoVal" class="ui centered mini image" src="./img/freccina_classe.png" data-position="bottom center" data-html="<div align=&quot;left&quot;><b>Legend Search and Development</b> <br> 15% of the greater of cost and total value of output of research and development">
+                            <script>
+    /*<![CDATA[*/
+
+                                $('#ricercaSviluppoVal').popup({
+                                    inline : true
+                                });
+
+    /*]]>*/
+    </script>
+                        </div>
+                        <div class="center aligned column" style="padding-top: 0px; padding-bottom: 0px; position: relative; bottom: -6px;box-shadow: none;">
+                            <img id="laureatiMagistraliVal" class="ui centered mini image" src="./img/freccina_classe.png" data-position="bottom center" data-html="<div align=&quot;left&quot;><b>Legend Magisterial graduates</b> <br> Team format to 2/3 by staff hold master's degree; <br> or 1/3 of PhD students, postdocs and graduate with 3 years experience in research certified">
+                            <script>
+    /*<![CDATA[*/
+
+                                $('#laureatiMagistraliVal').popup({
+                                    inline : true
+                                });
+
+    /*]]>*/
+    </script>
+                        </div>
+                        <div class="center aligned column" style="padding-top: 0px; padding-bottom: 0px; position: relative; bottom: -6px;box-shadow: none;">
+                            <img id="brevettiVal" class="ui centered mini image" src="./img/freccina_classe.png" data-position="bottom center" data-html="<div align=&quot;left&quot;><b>Legend Patents</b> <br> Company Custodian or licensee of industrial property, or holder of registered software">
+                            <script>
+    /*<![CDATA[*/
+
+                                $('#brevettiVal').popup({
+                                    inline : true
+                                });
+
+    /*]]>*/
+    </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+                    <!-- 				<div class="row " wicket:id="socialTecnoPnl"></div> -->
+    <!-- 				<wicket:container wicket:id="socialTecnoPnl"></wicket:container> -->
+                </div>
+            </div>
+
+            <div class="six wide column">
+                <div class="ui grid container">
+                    <div class="sixteen wide column" style="padding-top: 0px;">
+                        <div class="row roundedbottom" style="background-color: #DEDEDE;">
+                            <h4 style="text-align: center">
+                                REGISTRATION DATES:
+                            </h4>
+                            <div class="ui attached grid container">
+                                <div class="eight wide column" style="text-align: center;">
+                                    <img class="ui centered rounded image" id="id28" src="./dettaglioStartup?0--dettaglioStartupProfiloPanel-datiGenericiPnl-containerDatiGenerici-logori2Img&amp;id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D">
+                                    <div>
+    <!-- 									<wicket:message key="registroImprese">Registro Imprese</wicket:message> -->
+                                        Business Establishment
+                                    </div>
+                                    <div>
+    <!-- 									<span wicket:id="dtIscrizioneLbl"></span> -->
+                                        <span id="id29">2023-06-14</span>
+                                    </div>
+                                </div>
+                                <div class="one wide column" style="text-align: center; box-shadow: -1px 0px 0px 0 black; padding-top: 30px; margin-top: 10px; margin-bottom: 10px;"></div>
+                                <div class="six wide column" style="text-align: center;">
+                                    <img class="ui mini centered rounded image" id="id2a" src="./dettaglioStartup?0--dettaglioStartupProfiloPanel-datiGenericiPnl-containerDatiGenerici-logoStartupImg&amp;id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D">
+                                    <div>
+                                        Startup Section
+                                    </div>
+                                    <div>
+                                        <span id="id2b">2023-06-29</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="center aligned sixteen wide column">
+                            <div id="id2c">
+                                    <form name="fRI" id="fRI" action="landDocRi" method="POST" target="_blank">
+                                        <input type="hidden" name="dettaglioStartupProfiloPanel:datiGenericiPnl:containerDatiGenerici:containerDocumenti:cfisc" value="02162510669">
+                                        <input type="hidden" name="dettaglioStartupProfiloPanel:datiGenericiPnl:containerDatiGenerici:containerDocumenti:descDivAteco" value="Information service activities">
+                                    </form>
+                                    <a href="#" onclick="javascript:document.fRI.submit();">
+                                        <img src="./dettaglioStartup?0--dettaglioStartupProfiloPanel-datiGenericiPnl-containerDatiGenerici-containerDocumenti-imgBannerVisura&amp;id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D&amp;antiCache=1717400263021">
+                                    </a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                <script type="text/javascript">
+    /*<![CDATA[*/
+
+                            $(document).ready(function(){
+                                var t=setInterval(mostraTutto,10);
+                                setTimeout(function( ) { clearInterval( t ); }, 5000);
+
+                            function mostraTutto(){
+                                if ($('#mostPresentazioneAttivitaRi').height() < 60){
+                                    $('#mostraTuttoPresentazioneAttivitaRiLnk').hide();
+                                } else {
+                                    if ($('#mostraPartePresentazioneAttivitaRiLnk').is(":hidden")){
+                                        $('#mostraTuttoPresentazioneAttivitaRiLnk').show();
+                                    }
+                                }
+
+                                if ($('#mostTeamRi').height() < 60){
+                                    $('#mostraTuttoTeamRi').hide();
+                                } else {
+                                    if ($('#mostraParteTeamRi').is(":hidden")){
+                                        $('#mostraTuttoTeamRi').show();
+                                    }
+                                }
+
+                                if ($('#mostFinanzaIncubatoriRi').height() < 60){
+                                    $('#mostraTuttoFinanzaIncubatoriRi').hide();
+                                } else {
+                                    if ($('#mostraParteFinanzaIncubatoriRi').is(":hidden")){
+                                        $('#mostraTuttoFinanzaIncubatoriRi').show();
+                                    }
+                                }
+
+                                if ($('#mostInnovazioneRi').height() < 60){
+                                    $('#mostraTuttoInnovazioneRi').hide();
+                                } else {
+                                    if ($('#mostraParteInnovazioneRi').is(":hidden")){
+                                        $('#mostraTuttoInnovazioneRi').show();
+                                    }
+                                }
+                            };
+
+                            });
+
+    /*]]>*/
+    </script>
+
+
+    </div>
+
+            <div class="ui basic attached segment" style="text-align: left;border-bottom: none;">
+        <div class="ui celled three column grid">
+            <div class="row">
+                <div class="center aligned column" style="padding-top:0px;padding-bottom:0px;">
+                    <div class="ui grid basic compact segment" style="margin-left:auto;margin-right:auto;margin-top:0px;margin-bottom:0px;">
+                        <div class="thirteen wide column">
+                            <div>
+                                Turnover Value
+                            </div>
+                            <div>
+                                <span>unavailable</span>
+                            </div>
+                        </div>
+                        <div class="three wide column" style="margin-left: -10px">
+                            <b> <span style="font-size: 2.6em">?</span></b>
+                        </div>
+                    </div>
+                </div>
+                <div class="center aligned column" style="padding-top:0px;padding-bottom:0px;">
+                    <div class="ui grid basic compact segment" style="margin-left:auto;margin-right:auto;margin-top:0px;margin-bottom:0px;">
+                        <div class="thirteen wide column">
+                            <div>
+                                Number of Employees Range
+                            </div>
+                            <div>
+                                <span>unavailable</span>
+                            </div>
+                        </div>
+                        <div class="three wide column" style="margin-left: -10px">
+                            <b> <span style="font-size: 2.6em">?</span></b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center aligned column" style="padding-top:0px;padding-bottom:0px;">
+                    <div class="ui grid basic compact segment" style="margin-left:auto;margin-right:auto;margin-top:0px;margin-bottom:0px;">
+                        <div class="thirteen wide column">
+                            <div>
+                                Subscribed Capital Range
+                            </div>
+                            <div>
+                                <span>5K-10K euro</span>
+                            </div>
+                        </div>
+                        <div class="three wide column" style="margin-left: -10px">
+                            <b> <span style="font-size: 2.6em">3</span></b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="box-shadow: none;">
+                <div class="center aligned column" style="padding-top: 0px; padding-bottom: 0px; position: relative; bottom: -6px;box-shadow: none;">
+                    <img id="clsproduzioneVal" class="ui centered mini image" src="./img/freccina_classe.png" data-position="bottom center" data-html="<div align=&quot;left&quot;><b>Legend Operating income Class</b> <br> A=1-100K euro <br> B=100K-500K euro <br> C=500K-1M euro <br> D=1M-2M euro <br> E=2M-5M euro <br> F=5M-10M euro <br> G=10M-50M euro <br> H=more than 50M euro <br> ?=unavailable </div>">
+                    <script>
+    /*<![CDATA[*/
+
+                        $('#clsproduzioneVal').popup({
+                            inline : true
+                        });
+
+    /*]]>*/
+    </script>
+                </div>
+                <div class="center aligned column" style="padding-top: 0px; padding-bottom: 0px; position: relative; bottom: -6px;box-shadow: none;">
+                    <img id="clsaddettiVal" class="ui centered mini image" src="./img/freccina_classe.png" data-position="bottom center" data-html="<div align=&quot;left&quot;><b>Legend Number of Employees Class</b> <br> A=0-4 employees <br> B=5-9 employees <br> C=10-19 employees <br> D=20-49 employees <br> E=50-249 employees <br> F=almost 250 employees <br> ?=unavailable </div>">
+                    <script>
+    /*<![CDATA[*/
+
+                        $('#clsaddettiVal').popup({
+                            inline : true
+                        });
+
+    /*]]>*/
+    </script>
+                </div>
+                <div class="center aligned column" style="padding-top: 0px; padding-bottom: 0px; position: relative; bottom: -6px;box-shadow: none;">
+                    <img id="clscapitaleVal" class="ui centered mini image" src="./img/freccina_classe.png" data-position="bottom center" data-html="<div align=&quot;left&quot;><b>Legend Subscribed Capital Class</b> <br> 1=1 euro <br> 2=1-5K euro <br> 3=5K-10K euro <br> 4=10K-50K euro <br> 5=50K-100K euro <br> 6=100K-250K euro <br> 7=250K-500K euro <br> 8=500K-1M euro <br> 9=1M-2.5M euro <br> 10=2.5M-5M euro <br> 11=more than 5M euro <br> ?=unavailable </div>">
+                    <script>
+    /*<![CDATA[*/
+
+                        $('#clscapitaleVal').popup({
+                            inline : true
+                        });
+
+    /*]]>*/
+    </script>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+            <div class="ui basic attached segment" style="text-align: left;border-bottom: none;">
+        <div class="ui grid" style="margin-bottom:10px;">
+            <div class="row" style="padding-bottom:0px;">
+                <div class="column">
+                    <div class="ui celled three column grid" style="margin:0px;">
+                        <div class="center aligned column">
+                            <div>
+                                Predominantly Female
+                            </div>
+                            <div style="margin-top: 5px; font-weight: bold; font-size: 1.2em;">
+                                <span>NO</span>
+                            </div>
+                        </div>
+                        <div class="center aligned column">
+                            <div>
+                                Predominantly Young
+                            </div>
+                            <div style="margin-top: 5px; font-weight: bold; font-size: 1.2em;">
+                                <span>NO</span>
+                            </div>
+                        </div>
+                        <div class="center aligned column">
+                            <div>
+                                Predominantly Foreign
+                            </div>
+                            <div style="margin-top: 5px; font-weight: bold; font-size: 1.2em;">
+                                <span>NO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding:0px;padding-top:2px;">
+                <div class="center aligned column">
+                    <img id="prevalenzaGiovanileLegend" data-variation="very wide" class="ui centered mini image" src="./img/freccina_classe.png" data-position="bottom center" data-html="<div align=&quot;left&quot;><b>Legend female/young/foreign predominance</b><br/><b>NO:</b> [% of subscribed capital + % Administrators] / 2 &amp;#x2264; 50%<br/><b>Majority:</b> [% of subscribed capital + % Administrators] / 2 > 50%<br/><b>Strong:</b> [% of subscribed capital + % Administrators] / 2 > 66%<br/><b>Exclusive:</b> [% of subscribed capital + % Administrators] / 2 = 100%<br/><b>?:</b> Not available <div style=&quot;color:#999999;text-align:right;&quot;><i>predominance data refer to the previous quarter</i></div></div>">
+                    <script>
+    /*<![CDATA[*/
+
+                        $('#prevalenzaGiovanileLegend').popup({
+                            inline : true
+                        });
+
+    /*]]>*/
+    </script>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+            <div class="ui basic attached segment" style="text-align: left;">
+        <div class="ui grid" style="background-color: #F0F0F0;">
+            <div class="row">
+                <div class="one wide column">
+                    <img src="img/dati_dichiarati.png">
+                </div>
+                <div class="eight wide column">
+                    <h3 class="ui header">
+                        DATA FILLED USING DIGITAL SIGNATURE
+                        <img id="dettagliFirma" class="ui inline image desktop-only" src="./img/freccina_dx_classe_gray1.png" data-position="right center" style="height: 20px; width: 6px; vertical-align: top" data-html="Signed on 2024-05-30 by Francesco Smarra <br/> Certificated by ArubaPEC EU Qualified Certificates CA G1">
+                                    <script>
+    /*<![CDATA[*/
+
+                                    $('#dettagliFirma').popup({
+                                        inline : true,
+                                        hoverable: true,
+                                        delay: {
+                                            show: 300,
+                                            hide: 800
+                                        }
+                                    });
+
+    /*]]>*/
+    </script>
+                        <br>
+                        <span>by the  legal representative  Francesco Smarra on  2024-05-30</span>
+                    </h3>
+                </div>
+                <div class="seven wide column">
+                    <div class="ui stackable grid" style="text-align: right;">
+                         <div class="eight wide column middle aligned">
+                           <div>
+
+
+
+
+                             </div>
+                             <div>
+                                 <a href="mailto:nindo@pec.it">nindo@pec.it</a>
+                             </div>
+                         </div>
+                         <div class="right aligned eight wide column">
+                             <div style="display:block;margin-bottom:3px;text-align: right;">
+                                <span class="ui blue tag label">Automazione</span>
+                            </div><div style="display:block;margin-bottom:3px;text-align: right;">
+                                <span class="ui blue tag label">Modellazione</span>
+                            </div><div style="display:block;margin-bottom:3px;text-align: right;">
+                                <span class="ui blue tag label">IntelligenzaArtificiale</span>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <div class="ui basic attached segment" style="text-align: left;">
+        <div class="ui grid" style="background-color: #F0F0F0;">
+            <div class="row" style="margin-left: 5px;">
+                <div class="three wide middle aligned column" style="max-width: 150px;">
+                    <img class="centered image" src="./dettaglioStartup?0--dettaglioStartupProfiloPanel-statoProfiloPnl-insertLogoImg&amp;id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D&amp;antiCache=1717400263022">
+    <!-- 				<div  wicket:id="insertLogoImg"></div> -->
+                </div>
+                <div class="three wide column">
+                    <div id="myStat" data-dimension="120" data-width="10" data-fontsize="36" data-fgcolor="#3fa9f5" data-bgcolor="#DEDEDE" data-fill="#FFFFFF" data-total="200" data-icon="ui long arrow up" data-icon-size="28" data-icon-color="#fff" style="cursor: pointer; width: 120px;" data-text="95%" data-percent="95" data-part="95" class="circliful"><span class="circle-text" style="line-height: 120px; font-size: 36px;"><i class="fa ui long arrow up"></i>95%</span><canvas width="120" height="120"></canvas></div>
+                    <script>
+    /*<![CDATA[*/
+
+                        $(document).ready(function() {
+                            $('#myStat').circliful();
+                        });
+
+    /*]]>*/
+    </script>
+                </div>
+                <div class="seven wide column">
+                    <b><span>Macro-sector</span></b><br><span>ICT (Electrical and Electronic, Computer Science, Research and Development)</span>
+                </div>
+                <div class="three wide column center aligned bottom aligned">
+    <!-- 				<div onclick="return sendGaEdit();" wicket:id="matitaImg" class="ui centered rounded image" -->
+    <!-- 					style="padding-top: 50px;"></div> -->
+
+                    <div>
+                        <div><b>Are you the legal representative?</b></div>
+                        <button class="ui button null  blue  " id="id1">
+        <script></script>
+
+        <span>MODIFY</span>
+
+    </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row" id="detailProfileRow" style="background-color: #464646; padding-top: 0px;">
+
+
+                <div class="sixteen wide column" style="margin-left: 25px; margin-bottom: 20px; margin-top: 10px; margin-bottom: 0px;">
+    <!-- 				<h4 class="ui header inverted"> -->
+    <!-- 					<wicket:message key="completaProfiloEtc">COMPLETA IL PROFILO D'IMPRESA</wicket:message> -->
+    <!-- 				</h4> -->
+                    <i class="ui huge inverted caret down icon" style="margin-top: -35px; margin-left: 160px; color: #F0F0F0;"></i>
+                    <div align="right">
+                    <i class="ui large inverted close icon" id="closeDetailProfileBtn" style="cursor: pointer; margin-top: -50px; margin-right: -10px;"></i>
+                    </div>
+                </div>
+                <div class="sixteen wide column" style="margin-top: -10px;">
+                    <div class="ui grid">
+                        <div class="seven column row">
+                            <div class="column center aligned">
+                                <div id="id2d" class="">
+        <i class="ui icon ui icon big blue circular inverted checkmark"></i>
+    </div>
+                                <h4 class="ui header inverted">
+                                    Logo
+                                </h4>
+                            </div>
+                            <div class="column center aligned">
+                                <a href="#stadioAnchor" id="id2e" style="cursor: pointer" class="">
+        <i id="id9" class="ui icon ui icon big blue circular inverted checkmark"></i>
+    </a>
+                                <h4 class="ui header inverted">
+                                    Stage
+                                </h4>
+                            </div>
+                            <div class="column center aligned">
+                                <a href="#presentazioneAnchor" id="id2f" style="cursor: pointer" class="">
+        <i id="ida" class="ui icon checkmark big blue circular inverted"></i>
+    </a>
+                                <h4 class="ui header inverted">
+                                    Presentation
+                                </h4>
+                            </div>
+                            <div class="column center aligned">
+                                <a href="#prodottoAnchor" id="id30" style="cursor: pointer" class="">
+        <i id="idb" class="ui icon ui icon big blue circular inverted checkmark"></i>
+    </a>
+                                <h4 class="ui header inverted">
+                                    Product
+                                </h4>
+                            </div>
+                            <div class="column center aligned">
+                                <a href="#teamAnchor" id="id31" style="cursor: default" class="">
+        <i class="ui icon ui icon huge blue  circle thin"></i>
+    </a>
+                                <h4 class="ui header inverted">
+                                    Team
+                                </h4>
+                            </div>
+                            <div class="column center aligned">
+                                <a href="#mercatoAnchor" id="id32" style="cursor: pointer" class="">
+        <i id="idc" class="ui icon ui icon big blue circular inverted checkmark"></i>
+    </a>
+                                <h4 class="ui header inverted">
+                                    Market
+                                </h4>
+                            </div>
+                            <div class="column center aligned">
+                                <a href="#businessAnchor" id="id33" style="cursor: pointer" class="">
+        <i id="idd" class="ui icon ui icon big blue circular inverted checkmark"></i>
+    </a>
+                                <h4 class="ui header inverted">
+                                    Business
+                                </h4>
+                            </div>
+                <!-- 			<div class="column right aligned"> -->
+                <!-- 				<i class="ui large inverted close icon" id="closeDetailProfileBtn" -->
+                <!-- 					style="cursor: pointer; margin-top: -70px; margin-right: -10px;"></i> -->
+                <!-- 			</div> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <script type="text/javascript">
+    /*<![CDATA[*/
+
+                $('#closeDetailProfileBtn').click(function() {
+                    $('#detailProfileRow').hide();
+                });
+                $('#myStat').click(function() {
+                    $('#detailProfileRow').show();
+                });
+
+    /*]]>*/
+    </script>
+
+            <script type="text/javascript">
+    /*<![CDATA[*/
+
+            function sendGaEdit() {
+                var element = document.getElementById('companyNameForGA');
+                var value = $(element).text();
+
+                return true;
+            }
+
+    /*]]>*/
+    </script>
+        </div>
+
+    </div>
+
+            <div id="stadioAnchor" class="ui basic attached segment" style="text-align: left;">
+        <div class="nobordered attached segment">
+           <div>
+               <h4 class="ui header"><b>STARTUP STAGE</b></h4>
+           </div>
+           <br>
+           <div>
+        <div class="ui steps" style="width:100%; display: -webkit-inline-box">
+
+
+        <div class="step" id="id35" style="border-bottom: 5px solid;border-bottom-color: #3fa9f5;">
+                <div id="id36" class="">
+        <i class="ui big icon idea "></i>
+    </div>
+            <div class="content">
+                <label id="id37">Seed</label>
+            </div>
+        </div>
+
+
+
+        <div class="step" id="id39" style="border-bottom: 5px solid;border-bottom-color: #3fa9f5;">
+                <div id="id3a" class="">
+        <i class="ui big icon lab "></i>
+    </div>
+            <div class="content">
+                <label id="id3b">Development</label>
+            </div>
+        </div>
+
+
+
+        <div class="step active" id="id3d" style="border-bottom: 5px solid;border-bottom-color: #3fa9f5;">
+                <div id="id3e" class="">
+        <i class="ui big icon announcement "></i>
+    </div>
+            <div class="content">
+                <label id="id3f">Launch</label>
+            </div>
+        </div>
+
+
+
+        <div class="step disabled" id="id41" style="border-bottom: 5px solid;border-bottom-color: #BFBFBF;">
+                <div id="id42" class="">
+        <i class="ui big icon rocket "></i>
+    </div>
+            <div class="content">
+                <label id="id43">Scale-up</label>
+            </div>
+        </div>
+
+
+
+        <div class="step disabled" id="id45" style="border-bottom: 5px solid;border-bottom-color: #BFBFBF;">
+                <div id="id46" class="">
+        <i class="ui big icon checkmark "></i>
+    </div>
+            <div class="content">
+                <label id="id47">Exit</label>
+            </div>
+        </div>
+
+
+        </div>
+    </div>
+        </div>
+    </div>
+
+            <div id="presentazioneAnchor" class="ui basic attached segment paddedPanel" style="text-align: left;">
+        <div class="nobordered attached segment">
+           <h4 class="ui header">
+                   <b><span>PRESENTATION</span></b>
+           </h4>
+           <div>
+                   <b><span></span></b>
+           </div>
+           <div class="twocolumntext">Nindo operates in the field of ICT. Its goal is to provide a service to improve the performance of systems, such as energy efficient buildings, via data-driven modeling and automation algorithms developed integrating competencies from Artificial Intelligence and Control theory.</div>
+        </div>
+    </div>
+
+
+
+            <div id="prodottoAnchor" class="ui basic attached segment paddedPanel" style="text-align: left;">
+        <div class="nobordered attached segment">
+              <div>
+                  <h4 class="header"><b><span>PRODUCT/SERVICE</span></b></h4>
+              </div>
+              <br>
+              <div>
+        <div class="ui steps" style="width:100%; display: -webkit-inline-box">
+
+
+        <div class="step" id="id49" style="border-bottom: 5px solid;border-bottom-color: #3fa9f5;">
+                <div id="id4a" class="">
+        <i class="ui big icon idea "></i>
+    </div>
+            <div class="content">
+                <label id="id4b">Idea</label>
+            </div>
+        </div>
+
+
+
+        <div class="step active" id="id4d" style="border-bottom: 5px solid;border-bottom-color: #3fa9f5;">
+                <div id="id4e" class="">
+        <i class="ui big icon lab "></i>
+    </div>
+            <div class="content">
+                <label id="id4f">Prototype/beta version</label>
+            </div>
+        </div>
+
+
+
+        <div class="step disabled" id="id51" style="border-bottom: 5px solid;border-bottom-color: #BFBFBF;">
+                <div id="id52" class="">
+        <i class="ui big icon rocket "></i>
+    </div>
+            <div class="content">
+                <label id="id53">Ready</label>
+            </div>
+        </div>
+
+
+
+        <div class="step disabled" id="id55" style="border-bottom: 5px solid;border-bottom-color: #BFBFBF;">
+                <div id="id56" class="">
+        <i class="ui big icon announcement "></i>
+    </div>
+            <div class="content">
+                <label id="id57">Customers first</label>
+            </div>
+        </div>
+
+
+
+        <div class="step disabled" id="id59" style="border-bottom: 5px solid;border-bottom-color: #BFBFBF;">
+                <div id="id5a" class="">
+        <i class="ui big icon checkmark "></i>
+    </div>
+            <div class="content">
+                <label id="id5b">In the market</label>
+            </div>
+        </div>
+
+
+        </div>
+    </div>
+              <br>
+              <div>
+        <div class="nobordered attached segment">
+           <h4 class="ui header">
+                   <b><span></span></b>
+           </h4>
+           <div>
+                   <b><span></span></b>
+           </div>
+           <div class="twocolumntext">The service to be provided is based on the remote exchange of data between the user and a server system, which can be either a local server or a cloud service such as, for example, Amazon Web Server (AWS). The main idea is to acquire system data on a central server, such as temperature, humidity, CO2, energy, etc., of a building, and use them to create mathematical models, using combined techniques of Machine Learning and Identification Theory, which describe the dynamics of the system itself, in order to be able to make predictions, for example, of the temperature trend and energy consumption of the building. Subsequently, always on the local server, predictive control algorithms will be also implemented to provide, starting from the derived models, control inputs to ensure that climate control is operated on the building is capable of guaranteeing thermal comfort for the occupants and at the same time save energy. The data resulting from these processings, being either prediction only or also control, are then sent by the central server to the user according to his needs, i.e. knowledge of the consumption of the building over a predictive horizon or climate control. The same service can be used in a similar way also in other applications, as for example the control of telecommunications networks, structural monitoring, genomic classification, and others similar to the purposes of the start-up. The algorithms to be implemented will be based on the results obtained during the scientific research carried out by the proponents in recent years, which led to the publication of several international articles, both in prestigious journals and international conferences, and a patent.</div>
+        </div>
+    </div>
+        </div>
+    </div>
+
+            <div id="teamAnchor" class="ui basic attached segment paddedPanel" style="text-align: left;">
+        <div class="nobordered attached segment">
+           <div>
+                  <h4 class="header"><b><span>TEAM</span></b></h4>
+              </div>
+           <br>
+           <div>
+        <div class="ui steps" style="width:100%; display: -webkit-inline-box">
+
+
+        <div class="step" id="id5d" style="border-bottom: 5px solid;border-bottom-color: #3fa9f5;">
+                <div id="id5e" class="">
+        <i class="ui big icon idea "></i>
+    </div>
+            <div class="content">
+                <label id="id5f">To be determined</label>
+            </div>
+        </div>
+
+
+
+        <div class="step" id="id61" style="border-bottom: 5px solid;border-bottom-color: #3fa9f5;">
+                <div id="id62" class="">
+        <i class="ui big icon configure "></i>
+    </div>
+            <div class="content">
+                <label id="id63">Technical team complete</label>
+            </div>
+        </div>
+
+
+
+        <div class="step" id="id65" style="border-bottom: 5px solid;border-bottom-color: #3fa9f5;">
+                <div id="id66" class="">
+        <i class="ui big icon money "></i>
+    </div>
+            <div class="content">
+                <label id="id67">Business team complete</label>
+            </div>
+        </div>
+
+
+
+        <div class="step active" id="id69" style="border-bottom: 5px solid;border-bottom-color: #3fa9f5;">
+                <div id="id6a" class="">
+        <i class="ui big icon settings "></i>
+    </div>
+            <div class="content">
+                <label id="id6b">Defined</label>
+            </div>
+        </div>
+
+
+        </div>
+    </div>
+           <br>
+
+
+           <div class="ui two column grid">
+    <!-- 	   <div class="eight wide column"> -->
+
+    <!-- 		</div> -->
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- 		<div class="ui basic attached segment" wicket:id="carichePersonePnl" style="text-align: left;"></div> -->
+
+            <div id="mercatoAnchor" class="ui basic attached segment paddedPanel" style="text-align: left;">
+        <div class="nobordered attached segment">
+            <div style="margin-bottom: 0px;">
+                <h4 class="header">
+                    <b>MARKET</b>
+                </h4>
+            </div>
+            <h4 class="header" style="margin-top: 5px;margin-bottom: 5px;">GEOGRAPHIC AREA OF INTEREST</h4>
+            <div style="background-image: url('img/gray_bar_bg.png'); margin-top:10px;" class="ui two column centered stackable grid">
+                <div class="column" style="max-width: 400px; background-color: white;border-radius:200px;margin-right:10px;">
+                    <div class="ui grid" style="height: 200px;">
+                        <div class="row">
+                            <div class="six wide column center aligned middle aligned" style="padding-left:30px;">
+                                <img src="img/italy.png">
+                            </div>
+                            <div class="ten wide column regionScroll mCS-dir-rtl mCustomScrollbar _mCS_1 mCS_no_scrollbar" style="margin-top: 11px;height: 150px;" data-mcs-theme="dark-thin"><div id="mCSB_1" class="mCustomScrollBox mCS-dark-thin mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+                                <b>Italy</b><br>
+                                <span><span>ABRUZZO</span><br></span>
+                            </div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-dark-thin mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; display: none; top: 0px; height: 563px; max-height: 140px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div><div class="mCSB_draggerRail"></div></div></div></div></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" style="max-width: 400px;background-color: white;border-radius:200px;" data-mcs-theme="dark-thin">
+                    <div class="ui grid" style="height: 200px;">
+                        <div class="row">
+                            <div class="six wide column center aligned middle aligned" style="padding-left:30px;">
+                                <img src="img/world.png">
+                            </div>
+                            <div class="ten wide column regionScroll mCS-dir-rtl mCustomScrollbar _mCS_2 mCS_no_scrollbar" style="margin-top: 11px;height: 150px;"><div id="mCSB_2" class="mCustomScrollBox mCS-dark-thin mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_2_container" class="mCSB_container mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+                                <b>Abroad</b><br>
+                                <span><span>other European countries</span><br></span>
+                            </div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-dark-thin mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; display: none; top: 0px; height: 563px; max-height: 140px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div><div class="mCSB_draggerRail"></div></div></div></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+    /*<![CDATA[*/
+
+                $('.regionScroll').mCustomScrollbar({alwaysShowScrollbar:1});
+
+    /*]]>*/
+    </script>
+            <br>
+            <div>
+
+            <div>
+                <h4 class="header">
+                    <b><span>SALE CHANNELS</span></b>
+                </h4>
+            </div>
+            <div class="ui stackable four columns celled grid">
+                <div class="column">
+                    <div class="ui centered grid">
+                        <div class="heightIntestazioneTable row" style="background-color: #EEEEEE; box-shadow: 0px 1px 0px 0 #d4d4d5">
+                            <span>Directly</span>
+                        </div>
+                        <div class="row" style="box-shadow: 0px -1px 0px 0 #EEEEEE;">
+                            <img src="./dettaglioStartup?0--dettaglioStartupProfiloPanel-mercatoAreaGeogPnl-canaliVenditaPnl-gridContainer-col-0-choiceImg&amp;id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D&amp;antiCache=1717400263023">
+                        </div>
+                    </div>
+                </div><div class="column">
+                    <div class="ui centered grid">
+                        <div class="heightIntestazioneTable row" style="background-color: #EEEEEE; box-shadow: 0px 1px 0px 0 #d4d4d5">
+                            <span>Large-scale retail channel</span>
+                        </div>
+                        <div class="row" style="box-shadow: 0px -1px 0px 0 #EEEEEE;">
+                            <img src="./dettaglioStartup?0--dettaglioStartupProfiloPanel-mercatoAreaGeogPnl-canaliVenditaPnl-gridContainer-col-1-choiceImg&amp;id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D&amp;antiCache=1717400263023">
+                        </div>
+                    </div>
+                </div><div class="column">
+                    <div class="ui centered grid">
+                        <div class="heightIntestazioneTable row" style="background-color: #EEEEEE; box-shadow: 0px 1px 0px 0 #d4d4d5">
+                            <span>E-commerce</span>
+                        </div>
+                        <div class="row" style="box-shadow: 0px -1px 0px 0 #EEEEEE;">
+                            <img src="./dettaglioStartup?0--dettaglioStartupProfiloPanel-mercatoAreaGeogPnl-canaliVenditaPnl-gridContainer-col-2-choiceImg&amp;id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D&amp;antiCache=1717400263023">
+                        </div>
+                    </div>
+                </div><div class="column">
+                    <div class="ui centered grid">
+                        <div class="heightIntestazioneTable row" style="background-color: #EEEEEE; box-shadow: 0px 1px 0px 0 #d4d4d5">
+                            <span>Agents</span>
+                        </div>
+                        <div class="row" style="box-shadow: 0px -1px 0px 0 #EEEEEE;">
+                            <img src="./dettaglioStartup?0--dettaglioStartupProfiloPanel-mercatoAreaGeogPnl-canaliVenditaPnl-gridContainer-col-3-choiceImg&amp;id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D&amp;antiCache=1717400263024">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+        </div>
+    </div>
+
+    <!-- 		<div class="ui basic attached segment" wicket:id="canaliVenditaPnl" style="text-align: left;"></div> -->
+
+            <div id="businessAnchor" class="ui basic attached segment paddedPanel" style="text-align: left;">
+        <div class="nobordered attached segment">
+           <h4 class="ui header">
+                   <b><span>BUSINESS MODEL AND SOURCE OF PROFITS</span></b>
+           </h4>
+           <div>
+                   <b><span></span></b>
+           </div>
+           <div class="twocolumntext">The latest IEA report from 2021 shows that buildings are responsible for 30% of global final energy consumption and 27% of total emissions from the energy sector, of which 8% is made up of direct emissions in buildings and 19% from indirect emissions from the production of electricity and heat used in the same. These numbers represent an increase of almost 20% compared to the situation of 2010, in particular going from a building energy consumption from 115EJ in 2010 to 135EJ in 2021. One of the main concerns is given by the forecasts for 2050, in which these numbers are destined to grow dramatically. Further aggravating the situation is the spike in energy costs. For this reason, the use of more efficient and renewable energy technologies in buildings is accelerating significantly, with the aim of achieving the "Net Zero Emission" goal by 2050. For this goal, the next decade will be crucial to implement the necessary measures so that all new buildings and 20% of the existing building stock are "zero-carbon-ready" as early as 2030 [1]. To do this, of course, it is not enough to rely solely on renewable energy sources, but it is necessary to reduce energy consumption itself, both for environmental and economic reasons. In such a scenario, numerous companies are springing up around the world in this context. Wanting to consider only the national market, according to the ISTAT data of the last census available, i.e. that of 2011, the buildings currently present in Italy are around 14.5 million, of which around 85% are residential buildings and more specifically around 52% are single houses [2].
+    In this context, the goal is to exploit the technology now present in existing or new buildings in order to carry out monitoring and automation for energy efficiency. Considering the size of the market and the numbers involved, many companies are springing up even just in the sale of hardware technologies suitable for the purpose, such as Netatmo, Shelly, Sonoff, and others, which create easily installable remote monitoring and automation devices, and therefore suitable for small buildings, typically residential. However, all these companies do not provide services for the implementation of methodologies for optimizing energy efficiency. Some of them, such as Netatmo for example, limit themselves to providing basic methodologies for climate control, without pretensions of energy optimization, but only of reduction of consumption. The main reason is that this type of activity requires specific skills that are difficult to find, as they are closely linked to scientific research. This startup was born in this context, or in offering a monitoring, prediction and automation service for optimal energy efficiency by exploiting advanced methodologies available in the scientific panorama and partly developed in the research activity of the proponents.
+    What has been said up to this point concerns the market relating to energy efficient buildings, but it can be scaled with other numbers also with reference to other application fields, as for example the control of telecommunications networks, structural monitoring, genomic classification, and others similar to the purposes of the start-up.
+    [1] IEA (2022), Buildings, IEA, Paris https://www.iea.org/reports/buildings
+    [2] ISTAT (2022), http://dati-censimentopopolazione.istat.it/Index.aspx?DataSetCode=DICA_EDIFICIRES</div>
+        </div>
+    </div>
+
+            <div class="ui basic attached segment paddedPanel" style="text-align: left;">
+        <div class="nobordered attached segment">
+           <h4 class="ui header">
+                   <b><span>COMPETITORS</span></b>
+           </h4>
+           <div>
+                   <b><span></span></b>
+           </div>
+           <div class="twocolumntext">In recent years, the use of Artificial Intelligence in all those fields of applications that concern the improvement of life has undergone a dizzying growth, from energy efficiency to smart cities, from autonomous driving to smart entrepreneurship. In this context there are many companies that have established themselves, and startups that are emerging, which offer cloud services for the remote management for different problems. Many of these services are offered by large established companies, such as Amazon Web Services, IBM Watson, Meta Platforms, others have instead been developed by startups which were then acquired by large companies, such as the case of DeepMind, which was acquired by Google . Then there are companies that, although born less than 20 years ago, have grown dramatically over time, establishing themselves as a reference in the sector, such as Cloudera, Salesforce, SenseTime, Dataiku, H2O.ai, and the nowadays leaders C3.ai and OpenAI [1 ]. The main problem of these large platforms is that some of them "limit themselves" to offering pre-set services for system management, therefore not customizable ad-hoc according to customer needs, unless obviously receiving large proposals, others instead offer cloud services and equipment which, however, must then be programmed and managed by third parties. For this reason, several startups have been born in the last decade to meet these problems, offering services dedicated to the specific needs of even the "smallest" customers.
+    This innovative frontier is also booming in Italy, especially in the smart cities and smart buildings sector. The Internet of Things Observatory of the Milan Polytechnic, in collaboration with the Startup Intelligence Observatory, analyzed 307 startups, both Italian and international, operating in the sector, 212 of which received funding in the last 3 years [2]. In particular, 11 were selected to present their innovations, of which 6 operating in the Building Automation sector, from energy saving to structural monitoring, from indoor navigation to internal monitoring.
+    At local level, in Abruzzo, such advanced realities do not seem to exist. There are companies in the area that offer energy saving services, which offer the possibility of automatically and autonomously managing the plants inside a building. However, this automatic management is limited to the possibility of switching lights and systems on and off based on pre-settings or based on the presence of people measured by detectors, but no services are offered for the effective optimization of consumption. Rather, these realities represent a potential market for our startup, as they offer complementary products to ours: they prepare the building for remote management of the system, which could be optimized through the services we offer
+    [1] https://aimagazine.com/top10/top-10-artificial-intelligence-companies-in-2022
+    [2] https://www.economyup.it/innovazione/smart-building-e-smart-city-ecco-11-startup-che-stanno-cambiando-citta-ed-edifici/</div>
+        </div>
+    </div>
+
+            <div class="ui basic attached segment paddedPanel" style="text-align: left;">
+                <div class="nobordered attached segment">
+                      <div style="margin-bottom: 10px;">
+                          <h4 class="header"><b>INNOVATION</b></h4>
+                      </div>
+                    <div style="margin-bottom: 10px;">
+                        <img src="./dettaglioStartup?0--dettaglioStartupProfiloPanel-innovazionePanel-imgPossessoTitoliIntellettuali&amp;id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D&amp;antiCache=1717400263024">
+                        <b>Holding licenses owned intellectual with the entity and/or to the founder and/or third parties</b>
+                    </div>
+
+                    <div class="ui two column grid" style="margin-bottom: 10px;">
+
+                    </div>
+                    <div id="id6c">
+                        <div style="margin-bottom: 10px;">
+                            <b>Short description of the aspects of innovation that characterize the business enterprise</b>
+                        </div>
+                        <div id="id6d">
+        <div class="nobordered attached segment">
+           <h4 class="ui header">
+                   <b><span></span></b>
+           </h4>
+           <div>
+                   <b><span></span></b>
+           </div>
+           <div class="twocolumntext">The activities of this startup represent the natural and necessary evolution of the technology transfer of the research activities of the proponents regarding the energy efficiency of buildings.
+    In particular, the idea is to exploit the data that are collected inside a building, such as temperature, humidity, CO2, energy consumption, lighting, etc., to create mathematical models of the dynamics of the building by exploiting techniques that combine the use of Machine Learning and Identification methods. These models can then be used both to provide predictions on the behavior of the building dynamics, such as for example the prediction of room temperature and energy consumption, in order for example to provide cost predictions, and to set up predictive control algorithms to optimize the energy consumption of the building guaranteeing thermal or visual comfort for the occupants.
+    The same modeling and control technique can also be applied in other application fields, such as for example the traffic control of telecommunications networks, in which the traffic models of a network can be generated starting from the historical traffic data collected during the provision of the standard service. Subsequently these models can be used to dynamically and optimally control the bandwidth allocation and priorities for the various services. These approaches can also be used for the only purpose of modeling and therefore prediction, not aimed at control. For example, in structural monitoring applications, dynamic models of the oscillation of structures can be derived from accelerometric data, and these models can be used to detect any damage inside structures, such as bridges or buildings. In the biological field, this modeling can be used to model certain genomic conditions, such as that linked to epilepsy, and to use classification algorithms to identify their typology.
+    The main innovation consists in the fact that the modeling and automation of systems of such complexity with "classical" methods is currently prohibitive from the point of view of time, costs and knowledge, and the techniques that the startup proposes do overcome this gap.
+    In particular, the methodologies that we intend to apply for our activities come from the scientific research carried out by the proponents in recent years at the University of L'Aquila. Many publications in prestigious journals [1-5] and top-class international conferences [6-13] testify to the quality and potential of the work to be undertaken through this startup.
+    [1] &nbsp;De Rubeis, T., Smarra, F., Gentile, N., D’innocenzo, A., Ambrosini, D., &amp; Paoletti, D. (2021). Learning lighting models for optimal control of lighting system via experimental and numerical approach. Science and Technology for the Built Environment, 27(8), 1018-1030.
+    [2] Smarra, F., Di Girolamo, G. D., De Iuliis, V., Jain, A., Mangharam, R., &amp; D’Innocenzo, A. (2020). Data-driven switching modeling for mpc using regression trees and random forests. Nonlinear Analysis: Hybrid Systems, 36, 100882.
+    [3] Jain, A., Smarra, F., Behl, M., &amp; Mangharam, R. (2018). Data-driven model predictive control with regression trees—an application to building energy management. ACM Transactions on Cyber-Physical Systems, 2(1), 1-21.
+    [4] Smarra, F., Jain, A., De Rubeis, T., Ambrosini, D., D’Innocenzo, A., &amp; Mangharam, R. (2018). Data-driven model predictive control using random forests for building energy optimization and climate control. Applied energy, 226, 1252-1272.
+    [5] Behl, M., Smarra, F., &amp; Mangharam, R. (2016). DR-Advisor: A data-driven demand response recommender system. Applied Energy, 170, 30-46.
+    [6] Florenzan Reyes, L.F., Smarra, F., D’Innocenzo, A. (2022). Reduced SARX modeling and control via Regression Trees. In Proceedings of the American Control Conference.
+    [7] Reyes, L. F. F., Smarra, F., Lun, Y. Z., &amp; D’Innocenzo, A. (2021, June). Learning Markov models of fading channels in wireless control networks: a regression trees based approach. In 2021 29th Mediterranean Conference on Control and Automation (MED) (pp. 232-237). IEEE.
+    [8] Masti, D., Smarra, F., D’Innocenzo, A., &amp; Bemporad, A. (2020). Learning affine predictors for MPC of nonlinear systems via artificial neural networks. IFAC-PapersOnLine, 53(2), 5233-5238.
+    [9] de Rubeis, T., Gentile, N., Smarra, F., D’Innocenzo, A., Ambrosini, D., &amp; Paoletti, D. (2020). A novel method for daylight harvesting optimization based on lighting simulation and data-driven optimal control. In Proceedings of building simulation 2019: 16th conference of IBPSA (Vol. 16, pp. 1036-1043).
+    [10] Jain, A., Smarra, F., Reticcioli, E., D’Innocenzo, A., &amp; Morari, M. (2020). NeurOpt: Neural network based optimization for building energy management and climate control. In Learning for Dynamics and Control (pp. 445-454). PMLR.
+    [11] Smarra, F., &amp; D’Innocenzo, A. (2020). Learning Markov Jump Affine Systems via Regression Trees for MPC. IFAC-PapersOnLine, 53(2), 5252-5257.
+    [12] Smarra, F., Jain, A., Mangharam, R., &amp; D’Innocenzo, A. (2018). Data-driven switched affine modeling for model predictive control. IFAC-PapersOnLine, 51(16), 199-204.
+    [13] Jain, A., Smarra, F., &amp; Mangharam, R. (2017, December). Data predictive control using regression trees and ensemble learning. In 2017 IEEE 56th annual conference on decision and control (CDC) (pp. 4446-4451), IEEE.</div>
+        </div>
+    </div>
+    <!-- 					<div style="margin-bottom: 10px;"> -->
+    <!-- 						<span wicket:id="descrizioneTitoliIntellettualiLbl"></span> -->
+    <!-- 					</div> -->
+                    </div>
+                </div>
+    </div>
+
+            <div class="ui basic attached segment paddedPanel" style="text-align: left;">
+
+    <div class="nobordered attached segment">
+           <div style="margin-bottom: 10px;">
+                  <h4 class="header"><b>FINANCE</b></h4>
+        </div>
+
+            <div style="margin-bottom: 10px;">
+                <b><span id="id6e">There are no loans and / or investments for the company to report</span></b>
+            </div>
+
+
+
+
+    </div>
+
+    </div>
+
+    <!-- 		<div class="ui basic attached segment" wicket:id="valProspettichePnl" style="text-align: left;"></div> -->
+
+    <!-- 		<div class="ui basic attached segment" wicket:id="valProspetticheAmmontarePnl" style="text-align: left;"></div> -->
+
+    <!-- 		<div class="ui basic attached segment" wicket:id="breakeventPnl" style="text-align: left;"></div> -->
+
+
+
+               <div class="ui basic attached segment paddedPanel" style="text-align: left;">
+                <div class="nobordered attached segment" style="margin-bottom: 10px;">
+                     <div style="margin-bottom: 10px;">
+                          <h4 class="header"><b><span>ASSOCIATION</span></b></h4>
+                      </div>
+                    <div style="margin-bottom: 10px;">
+                        <img id="id6f" src="./dettaglioStartup?0--dettaglioStartupProfiloPanel-associazioneCategoriaPanel-imgSelettoreAssCategoria&amp;id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D&amp;antiCache=1717400263024">
+                        <b>The company has trade relations with business associations, universities and research centers</b>
+                    </div>
+
+                    <div class="ui two column grid" style="margin-bottom: 10px;">
+                        <div class="column">
+                            <div class="ui grid">
+                                 <div class="center aligned one wide column">
+                                     <i class="ui small building outline icon black"></i>
+                                 </div>
+                                    <div class="fifteen wide column">
+                                        <div class="ui grid">
+                                            <div class="row" style="padding-bottom: 0px;">
+                                                <div class="sixteen wide column">
+                                                    <b><span>university</span></b>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="padding-bottom: 0px;padding-top: 0px;">
+                                                <div class="sixteen wide column">
+                                                    <span>Università degli Studi dell'Aquila</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+
+
+               <div class="ui basic attached segment paddedPanel" style="text-align: left;">
+                <div class="nobordered attached segment" style="margin-bottom: 10px;">
+                     <div style="margin-bottom: 10px;">
+                          <h4 class="header"><b><span id="id70">INCUBATOR</span></b></h4>
+                      </div>
+                    <div style="margin-bottom: 10px;">
+                        <img src="./dettaglioStartup?0--dettaglioStartupProfiloPanel-incubatorePanel-imgSelettoreIncubatoreAccelerato&amp;id=KXU3bCJQBfS92AJOXqJVKg%2BWN%2BvvCSEnwawhUwfhow%3D%3D&amp;antiCache=1717400263024">
+                        <b>Accelerated by a certified incubator</b>
+                    </div>
+
+                </div>
+    </div>
+
+        </div>
+
+    </div>
+        <br><br><br><br> <!-- Layout fix per Safari -->
+
+                </div>
+            </div>
+        </div>
+
+                </div>
+
+                <div class="footer" id="footer">
+
+        <div style="margin-top: 0.5%;" class="desktop-only">
+            <div class="ui grid">
+                <div class="two wide column" style="font-size: 10px;display: inline-block;text-align: right; padding-right: 0px;">
+                    <div style="display: inline-block;">
+                        <div style="display: inline-block;">
+                            <b>E' un servizio realizzato da</b>
+                        </div>
+                        <div style="text-align: left;">
+                            <a href="http://informative.infocamere.it/startup-e-pmi-innovative" target="_new" style="font-size: x-small;"><i>Note Legali e Privacy policy</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="two wide column " style="padding-left: 10px;">
+                    <a href="http://www.infocamere.it" target="_blank"> <img id="logo-infocamere" src="img/infocamere-new.png" alt="Infocamere" style="">
+                    </a>
+                </div>
+                <div class="three wide column center aligned">
+                    <a href="http://www.registroimprese.it" target="_blank" style="color:black;">
+                        <b>www.registroimprese.it</b>
+                    </a>
+                </div>
+                <div class="four wide column center aligned">
+                    <a href="http://www.camcom.gov.it/" target="_blank"> <img src="img/camera_commercio.png" alt="Camere di commercio d'Italia">
+                    </a>
+                </div>
+                <div class="three wide column center aligned">
+                    <a href="https://www.mise.gov.it" target="_blank">
+                        <img src="img/MiseModificato.png" alt="Ministero delle Imprese e del Made in Italy">
+                    </a>
+                </div>
+                <div class="two wide column center aligned" style="margin-top:4px">
+                    <a href="credits"><b>Credits</b></a>
+                </div>
+
+            </div>
+        </div>
+        <div style="margin-top: 0.5%;" class="mobile-only">
+            <div class="ui grid " style="padding-left: 0px; padding-right:0px;">
+                <div class="four wide column" style="padding-left: 20px;">
+                    <a href="http://www.infocamere.it" target="_blank"> <img id="logo-infocamere" src="img/infocamere-new.png" alt="Infocamere" style="">
+                    </a>
+                </div>
+                <div class="five wide column center aligned">
+                    <a href="http://www.registroimprese.it" target="_blank" style="color:black;">
+                        <b>www.registroimprese.it</b>
+                    </a><br>
+                    <a href="http://informative.infocamere.it/startup-e-pmi-innovative" target="_new" style="font-size: x-small;"><i>Note Legali e Privacy policy</i></a>
+                </div>
+                <div class="seven wide column right aligned">
+                    <a href="http://www.camcom.gov.it/" target="_blank"> <img src="img/camera_commercio.png" alt="Camere di commercio d'Italia">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript">
+    /*<![CDATA[*/
+
+        $(document).ready(function(){
+            $("#mainGrid").show();
+            $('.ui.dropdown.homepage').dropdown();
+            $('.ui.accordion.homepage').accordion();
+         });
+
+    /*]]>*/
+    </script>
+
+        <script type="text/javascript">
+    /*<![CDATA[*/
+
+        function sendGa(element) {
+            return true;
+        }
+
+    /*]]>*/
+    </script>
+
+        <!--
+        <script type="text/javascript">
+        window._mfq = window._mfq || [];
+        (function() {
+            var mf = document.createElement("script");
+            mf.type = "text/javascript"; mf.async = true;
+            mf.src = "//cdn.mouseflow.com/projects/ffaf13bf-3a45-4269-a038-c6044b19da3a.js";
+            document.getElementsByTagName("head")[0].appendChild(mf);
+        })();
+        </script>
+         -->
+
+
+    </body></html>

@@ -12,6 +12,12 @@ import openpyxl
 import traceback
 import re
 
+from openpyxl import Workbook
+from openpyxl.styles import Font
+
+
+
+
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -44,7 +50,7 @@ start_time = time.time()
 logging.info("Starting to load the web page.")
 
 # Open the desired URL directly
-driver.get("file:///C:/Users/Allan/OneDrive/Documents/Upwork/jet-hr/sample.html")
+driver.get("file:///D:/Documents/SideProjectFiles/Upwork/jet-hr/jet-hr/sample3.html")
 
 # Wait until elements are present
 wait = WebDriverWait(driver, 20)
@@ -71,8 +77,25 @@ nace_code = get_text_after_label("NACE Code")
 sector = get_text_after_label("Sector")
 
 number_of_employees_range = wait.until(EC.presence_of_element_located((By.XPATH, '//div[contains(text(), "Number of Employees Range")]/following-sibling::div/span'))).text
-email = wait.until(EC.presence_of_element_located((By.XPATH, '//a[contains(@href, "mailto:")]'))).text
-linkedin_profile_url = wait.until(EC.presence_of_element_located((By.XPATH, '//a[contains(@href, "https://www.linkedin.com/")]'))).get_attribute('href')
+linkedin_profile_url = wait.until(EC.presence_of_element_located((By.XPATH, '//a[contains(@href, "https://www.linkedin.com/company")]'))).get_attribute('href')
+
+wait = WebDriverWait(driver, 10)
+email_url_element = driver.find_element(By.XPATH, "//div//a[contains(@href, 'mailto:')]")
+
+# Find all elements containing the email URLs
+email_url_elements = driver.find_elements(By.XPATH, "//a[contains(@href, 'mailto:')]")
+
+# Extract and print the text content of each element
+for email_element in email_url_elements:
+    email_text = email_element.text
+    print("Email Text:", email_text)
+email_href = email_url_element.get_attribute('href')
+
+[email_element.text for index, email_element in enumerate(email_url_elements) if email_element.text]
+
+# Print the href attribute of the <a> tag inside the next sibling <div>
+
+
 
 
 
@@ -117,7 +140,7 @@ data = {
     "sector": sector,
     "legal_representative": legal_representative,
     "number_of_employees_range": number_of_employees_range,
-    "email": email,
+    "email": email_text,
     "linkedin_profile_url": linkedin_profile_url,
     "presentation": presentation,
     "competitors": competitors
@@ -125,6 +148,29 @@ data = {
 
 # Print as pretty JSON
 print(json.dumps(data, indent=4))
+
+
+# Create a new workbook and select the active worksheet
+wb = Workbook()
+ws = wb.active
+
+# Define the URL and the display text
+url = linkedin_profile_url
+display_text = linkedin_profile_url
+
+# Add the hyperlink to a cell
+cell = ws.cell(row=1, column=1, value=display_text)
+cell.hyperlink = url
+cell.style = "Hyperlink"
+cell.font = Font(color="0000FF", underline="single")
+
+cell = ws.cell(row=2, column=2, value=email_text)
+cell.hyperlink = email_href
+cell.style = "Hyperlink"
+cell.font = Font(color="0000FF", underline="single")
+
+# Save the workbook
+wb.save("example.xlsx")
 
 
 
