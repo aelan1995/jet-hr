@@ -50,7 +50,7 @@ start_time = time.time()
 logging.info("Starting to load the web page.")
 
 # Open the desired URL directly
-driver.get("file:///D:/Documents/SideProjectFiles/Upwork/jet-hr/jet-hr/sample3.html")
+driver.get("file:///D:/Documents/SideProjectFiles/Upwork/jet-hr/jet-hr/sample1.html")
 
 # Wait until elements are present
 wait = WebDriverWait(driver, 20)
@@ -77,7 +77,7 @@ nace_code = get_text_after_label("NACE Code")
 sector = get_text_after_label("Sector")
 
 number_of_employees_range = wait.until(EC.presence_of_element_located((By.XPATH, '//div[contains(text(), "Number of Employees Range")]/following-sibling::div/span'))).text
-linkedin_profile_url = wait.until(EC.presence_of_element_located((By.XPATH, '//a[contains(@href, "https://www.linkedin.com/company")]'))).get_attribute('href')
+linkedin_profile_url =""
 
 wait = WebDriverWait(driver, 10)
 email_url_element = driver.find_element(By.XPATH, "//div//a[contains(@href, 'mailto:')]")
@@ -85,13 +85,10 @@ email_url_element = driver.find_element(By.XPATH, "//div//a[contains(@href, 'mai
 # Find all elements containing the email URLs
 email_url_elements = driver.find_elements(By.XPATH, "//a[contains(@href, 'mailto:')]")
 
-# Extract and print the text content of each element
-for email_element in email_url_elements:
-    email_text = email_element.text
-    print("Email Text:", email_text)
+
 email_href = email_url_element.get_attribute('href')
 
-[email_element.text for index, email_element in enumerate(email_url_elements) if email_element.text]
+email_text = [email_element.text for index, email_element in enumerate(email_url_elements) if email_element.text]
 
 # Print the href attribute of the <a> tag inside the next sibling <div>
 
@@ -113,7 +110,24 @@ try:
 
     h4_element_2 = driver.find_element(By.XPATH, "//h4[contains(@class, 'header')]//span[text()='COMPETITORS']")
     parent_h4_2 = h4_element_2.find_element(By.XPATH, "./ancestor::h4")
-    competitors= parent_h4_2.find_element(By.XPATH, "following-sibling::div[2]").text
+    # Initialize an empty list to store competitors' details
+    competitors_details = []
+
+    # Find the element containing the text "COMPETITORS"
+    competitors_header = soup.find(string="COMPETITORS")
+
+    if competitors_header:
+        # Get the parent div containing the header
+        parent_div = competitors_header.find_parent('div', class_='nobordered attached segment')
+        if parent_div:
+            # Extract text from the parent segment
+            competitors_text = parent_div.get_text(separator="\n", strip=True)
+            competitors_details.append(competitors_text)
+
+    # Print the extracted competitors' details
+    for detail in competitors_details:
+        print(detail)
+        print('-' * 40)
 
 except:
     # Assign a blank string if the section is not found
